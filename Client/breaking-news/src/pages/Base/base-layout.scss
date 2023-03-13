@@ -1,0 +1,42 @@
+@import "./../../flex.scss";
+@import "./../../theme.scss";
+
+.full-page-wrapper {
+  height: 100%;
+  .header-wrapper {
+    height: $header-height;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary;
+    width: 100%;
+    .header-title {
+      font-size: 1.7rem;
+      font-weight: 500;
+      color: aliceblue;
+      height: calc(#{$header-height});
+      border-bottom: 1px solid aliceblue;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .header-nav {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  // I
+  .content-footer-wrapper {
+    min-height: calc(100% - #{$header-height});
+    overflow: auto;
+    .content-wrapper {
+      min-height: calc(100% - #{$footer-height});
+      background-color: gray;
+      color: white;
+    }
+    .footer-wrapper {
+      height: $footer-height;
+      background-color: $color-secondary;
+    }
+  }
+}

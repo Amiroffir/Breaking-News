@@ -1,0 +1,10 @@
+@import "./../../theme.scss";
+
+.tab-link {
+  text-decoration: none;
+  color: $color-secondary;
+  --bs-nav-link-hover-color: black;
+  &:hover {
+    color: black;
+  }
+}
