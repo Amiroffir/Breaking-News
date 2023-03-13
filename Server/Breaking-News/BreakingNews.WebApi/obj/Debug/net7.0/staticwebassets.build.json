@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BKfPYmbc1scYFyFEixVgExRckkI0ACvbyb6xdgZEpBc=",
+  "Source": "BreakingNews.WebApi",
+  "BasePath": "_content/BreakingNews.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

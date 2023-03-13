@@ -1,0 +1,12 @@
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\bin\Debug\net7.0\BreakingNews.Models.deps.json
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\bin\Debug\net7.0\BreakingNews.Models.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\bin\Debug\net7.0\BreakingNews.Models.pdb
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\obj\Debug\net7.0\BreakingNews.Models.csproj.AssemblyReference.cache
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\obj\Debug\net7.0\BreakingNews.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\obj\Debug\net7.0\BreakingNews.Models.AssemblyInfoInputs.cache
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\obj\Debug\net7.0\BreakingNews.Models.AssemblyInfo.cs
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\obj\Debug\net7.0\BreakingNews.Models.csproj.CoreCompileInputs.cache
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\obj\Debug\net7.0\BreakingNews.Models.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\obj\Debug\net7.0\refint\BreakingNews.Models.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\obj\Debug\net7.0\BreakingNews.Models.pdb
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Models\obj\Debug\net7.0\ref\BreakingNews.Models.dll

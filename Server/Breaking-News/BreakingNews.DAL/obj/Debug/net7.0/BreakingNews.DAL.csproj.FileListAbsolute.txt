@@ -1,0 +1,12 @@
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\obj\Debug\net7.0\BreakingNews.DAL.csproj.AssemblyReference.cache
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\obj\Debug\net7.0\BreakingNews.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\obj\Debug\net7.0\BreakingNews.DAL.AssemblyInfoInputs.cache
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\obj\Debug\net7.0\BreakingNews.DAL.AssemblyInfo.cs
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\obj\Debug\net7.0\BreakingNews.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\bin\Debug\net7.0\BreakingNews.DAL.deps.json
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\bin\Debug\net7.0\BreakingNews.DAL.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\bin\Debug\net7.0\BreakingNews.DAL.pdb
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\obj\Debug\net7.0\BreakingNews.DAL.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\obj\Debug\net7.0\refint\BreakingNews.DAL.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\obj\Debug\net7.0\BreakingNews.DAL.pdb
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.DAL\obj\Debug\net7.0\ref\BreakingNews.DAL.dll

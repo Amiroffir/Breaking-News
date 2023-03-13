@@ -1,0 +1,252 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Entities\\BreakingNews.Entities.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.DAL\\BreakingNews.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.DAL\\BreakingNews.DAL.csproj",
+        "projectName": "BreakingNews.DAL",
+        "projectPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.DAL\\BreakingNews.DAL.csproj",
+        "packagesPath": "C:\\Users\\Amir Offir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Amir Offir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Data.Sql\\BreakingNews.Data.Sql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Data.Sql\\BreakingNews.Data.Sql.csproj",
+        "projectName": "BreakingNews.Data.Sql",
+        "projectPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Data.Sql\\BreakingNews.Data.Sql.csproj",
+        "packagesPath": "C:\\Users\\Amir Offir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Data.Sql\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Amir Offir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.DAL\\BreakingNews.DAL.csproj": {
+                "projectPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.DAL\\BreakingNews.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Entities\\BreakingNews.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Entities\\BreakingNews.Entities.csproj",
+        "projectName": "BreakingNews.Entities",
+        "projectPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Entities\\BreakingNews.Entities.csproj",
+        "packagesPath": "C:\\Users\\Amir Offir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Amir Offir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.DAL\\BreakingNews.DAL.csproj": {
+                "projectPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.DAL\\BreakingNews.DAL.csproj"
+              },
+              "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Data.Sql\\BreakingNews.Data.Sql.csproj": {
+                "projectPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Data.Sql\\BreakingNews.Data.Sql.csproj"
+              },
+              "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Models\\BreakingNews.Models.csproj": {
+                "projectPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Models\\BreakingNews.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Models\\BreakingNews.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Models\\BreakingNews.Models.csproj",
+        "projectName": "BreakingNews.Models",
+        "projectPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Models\\BreakingNews.Models.csproj",
+        "packagesPath": "C:\\Users\\Amir Offir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Amir Offir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
