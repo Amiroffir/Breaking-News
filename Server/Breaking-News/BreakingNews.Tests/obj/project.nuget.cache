@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "GvP7B2v9lKE2xu3lKdCvmFoACGfzs8q3IxPkLSH7WN8OuYeUoCbmBBo98g4p6Jo+Gg4uH1ZBNxmsgQ3VJ7q6Wg==",
+  "dgSpecHash": "S862OiYin0NFPt4gcHPdaIBifqUg8eIrwcn6dpMr7LP8DziaTlYTTyoaYxzmJ4qRWzl5yoM41IDivrECmefwgA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Tests\\BreakingNews.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.3\\microsoft.aspnetcore.openapi.7.0.3.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",
-    "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

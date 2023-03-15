@@ -1,4 +1,5 @@
 using BreakingNews.Entities;
+using System.Xml;
 
 namespace BreakingNews.Tests
 {
@@ -10,10 +11,8 @@ namespace BreakingNews.Tests
 
 		}
 
-		[Test]
-		public async Task Test()
-		{
-			await MainManager.Instance.RSSManager.GetNewsFeed();
-		}
+		
+
+
 	}
 }

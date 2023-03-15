@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vtrWJ9/fabUoflRcRHNjCmXZGxhX3cO3kDgJQFoyJb8rOJ7X8KOb70fl8jESC72f3qPzoBwkzGMbfAbNRpycIg==",
+  "dgSpecHash": "OF7oi0pqhGCJDaBkRojBtLOr87Lhr/JRYjZX1/VJqudVohaOtn50sYU9QxCIxixu26vb+m8w6NfCA528dlS34Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Data.Sql\\BreakingNews.Data.Sql.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",

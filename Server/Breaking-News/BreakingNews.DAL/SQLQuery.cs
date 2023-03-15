@@ -6,7 +6,8 @@ namespace BreakingNews.DAL
 	public class SQLQuery
 	{
 
-		public static string connectionString = "";//GetConnectionString();
+		//public static string connectionString = //GetConnectionString();
+		public static string connectionString = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=BreakingNews;Data Source=localhost\\SQLEXPRESS";
 		public delegate void SetDataReader_dg(SqlDataReader reader);
 		public delegate object SetResultDataReader_dg(SqlDataReader reader);
 

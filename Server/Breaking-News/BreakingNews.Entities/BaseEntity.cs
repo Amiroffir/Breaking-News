@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Xml;
 using Utilities;
 
 namespace BreakingNews.Entities
@@ -12,7 +8,17 @@ namespace BreakingNews.Entities
 		public BaseEntity(LogManager logManager)
 		{
 			LogManager = logManager;
+			LogManager.LogEvent("Base entity initialized");
+			
 		}
 		public LogManager LogManager;
+
+		public enum NewsSources
+		{
+			Walla = 1,
+			Maariv = 2,
+			Ynet = 3,
+			Mako = 4,
+		}
 	}
 }

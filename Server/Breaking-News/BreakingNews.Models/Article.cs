@@ -2,7 +2,7 @@
 {
 	public class Article
 	{
-		public string SourceName { get; set; }
+		public int NewsSource { get; set; }
 		public string ImgUrl { get; set; }
 		public string Headline { get; set; }
 		public string Description { get; set; }

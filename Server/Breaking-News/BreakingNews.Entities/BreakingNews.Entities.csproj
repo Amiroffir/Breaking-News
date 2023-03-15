@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BreakingNews.DAL\BreakingNews.DAL.csproj" />
     <ProjectReference Include="..\BreakingNews.Data.Sql\BreakingNews.Data.Sql.csproj" />
     <ProjectReference Include="..\BreakingNews.Models\BreakingNews.Models.csproj" />

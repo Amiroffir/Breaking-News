@@ -1,0 +1,363 @@
+13/03/2023 15:16:23-Event-RSS Manager initialized-
+13/03/2023 15:16:23-Event-XML Manager initialized-
+13/03/2023 15:16:23-Event-Topics Manager initialized-
+13/03/2023 15:16:23-Event-Hourly News Scan is started-
+13/03/2023 15:33:11-Event-RSS Manager initialized-
+13/03/2023 15:35:45-Event-RSS Manager initialized-
+13/03/2023 15:38:18-Event-RSS Manager initialized-
+13/03/2023 16:43:18-Event-RSS Manager initialized-
+13/03/2023 16:44:24-Event-RSS Manager initialized-
+13/03/2023 16:45:07-Event-RSS Manager initialized-
+13/03/2023 16:53:56-Event-RSS Manager initialized-
+13/03/2023 17:56:52-Event-RSS Manager initialized-
+13/03/2023 17:56:52-Event-XML Manager initialized-
+13/03/2023 17:56:52-Event-Topics Manager initialized-
+13/03/2023 18:07:20-Event-RSS Manager initialized-
+13/03/2023 18:07:20-Event-XML Manager initialized-
+13/03/2023 18:16:26-Event-RSS Manager initialized-
+13/03/2023 18:16:26-Event-XML Manager initialized-
+13/03/2023 18:16:26-Event-Topics Manager initialized-
+13/03/2023 18:16:26-Event-Hourly News Scan is started-
+13/03/2023 18:16:26-Event-Hourly News Scan is started-
+13/03/2023 18:27:10-Event-RSS Manager initialized-
+13/03/2023 18:27:10-Event-XML Manager initialized-
+13/03/2023 18:27:10-Event-Topics Manager initialized-
+13/03/2023 18:27:10-Event-Hourly News Scan is started-
+13/03/2023 18:49:05-Event-RSS Manager initialized-
+13/03/2023 18:49:05-Event-XML Manager initialized-
+14/03/2023 09:21:00-Event-RSS Manager initialized-
+14/03/2023 09:21:00-Event-XML Manager initialized-
+14/03/2023 09:40:42-Event-RSS Manager initialized-
+14/03/2023 09:40:42-Event-XML Manager initialized-
+14/03/2023 09:52:33-Event-RSS Manager initialized-
+14/03/2023 09:52:33-Event-XML Manager initialized-
+14/03/2023 09:52:33-Event-Topics Manager initialized-
+14/03/2023 09:52:33-Event-Hourly News Scan is started-
+14/03/2023 10:52:38-Event-Hourly News Scan is started-
+14/03/2023 12:12:04-Event-RSS Manager initialized-
+14/03/2023 12:12:04-Event-XML Manager initialized-
+14/03/2023 12:12:04-Event-Topics Manager initialized-
+14/03/2023 12:12:04-Event-Hourly News Scan is started-
+14/03/2023 12:13:52-Event-RSS Manager initialized-
+14/03/2023 12:13:52-Event-XML Manager initialized-
+14/03/2023 12:13:52-Event-Topics Manager initialized-
+14/03/2023 12:13:52-Event-Hourly News Scan is started-
+14/03/2023 12:30:46-Event-RSS Manager initialized-
+14/03/2023 12:30:46-Event-XML Manager initialized-
+14/03/2023 12:37:42-Event-RSS Manager initialized-
+14/03/2023 12:44:22-Event-RSS Manager initialized-
+14/03/2023 12:44:22-Event-XML Manager initialized-
+14/03/2023 12:45:59-Event-RSS Manager initialized-
+14/03/2023 12:45:59-Event-XML Manager initialized-
+14/03/2023 12:57:31-Event-RSS Manager initialized-
+14/03/2023 12:57:31-Event-XML Manager initialized-
+14/03/2023 12:57:31-Event-Topics Manager initialized-
+14/03/2023 15:01:52-Event-RSS Manager initialized-
+14/03/2023 15:03:44-Event-RSS Manager initialized-
+14/03/2023 15:07:00-Event-RSS Manager initialized-
+14/03/2023 15:27:43-Event-RSS Manager initialized-
+14/03/2023 15:27:43-Event-XML Manager initialized-
+14/03/2023 15:27:43-Event-Topics Manager initialized-
+14/03/2023 18:09:00-Event-Base entity initialized-
+14/03/2023 18:09:00-Event-RSS Manager initialized-
+14/03/2023 18:09:00-Event-Base entity initialized-
+14/03/2023 18:09:00-Event-Topics Manager initialized-
+14/03/2023 18:09:00-Event-Base entity initialized-
+14/03/2023 18:09:00-Event-NewsFeedHandler initialized-
+14/03/2023 18:09:00-Event-Ynet Manager initialized-
+14/03/2023 18:09:00-Event-Hourly News Scan is started-
+14/03/2023 18:09:26-Event-Error in GetTopicsBySource: Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+NewsSource
+-
+14/03/2023 18:11:08-Event-Base entity initialized-
+14/03/2023 18:11:08-Event-RSS Manager initialized-
+14/03/2023 18:11:08-Event-Base entity initialized-
+14/03/2023 18:11:08-Event-Topics Manager initialized-
+14/03/2023 18:11:08-Event-Base entity initialized-
+14/03/2023 18:11:08-Event-NewsFeedHandler initialized-
+14/03/2023 18:11:08-Event-Ynet Manager initialized-
+14/03/2023 18:11:08-Event-Hourly News Scan is started-
+14/03/2023 18:11:08-Event-Hourly News Scan is started-
+14/03/2023 18:11:09-Event-Error in GetTopicsBySource: Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+NewsSource
+-
+14/03/2023 18:12:21-Event-Base entity initialized-
+14/03/2023 18:13:25-Event-Base entity initialized-
+14/03/2023 18:13:25-Event-RSS Manager initialized-
+14/03/2023 18:13:25-Event-Base entity initialized-
+14/03/2023 18:13:25-Event-Topics Manager initialized-
+14/03/2023 18:15:51-Event-Base entity initialized-
+14/03/2023 18:15:51-Event-RSS Manager initialized-
+14/03/2023 18:16:44-Event-Base entity initialized-
+14/03/2023 18:16:44-Event-RSS Manager initialized-
+14/03/2023 18:18:56-Event-Base entity initialized-
+14/03/2023 18:18:56-Event-RSS Manager initialized-
+14/03/2023 18:18:56-Event-Base entity initialized-
+14/03/2023 18:18:56-Event-Topics Manager initialized-
+14/03/2023 18:18:56-Event-Base entity initialized-
+14/03/2023 18:20:18-Event-Base entity initialized-
+14/03/2023 18:20:19-Event-Error in GetTopicsBySource: Could not find stored procedure 'GetTopicsByNewsSourceynet'.-
+14/03/2023 18:20:18-Event-Base entity initialized-
+14/03/2023 18:20:18-Event-Topics Manager initialized-
+14/03/2023 18:20:18-Event-Base entity initialized-
+14/03/2023 18:20:18-Event-NewsFeedHandler initialized-
+14/03/2023 18:21:15-Event-Base entity initialized-
+14/03/2023 18:21:15-Event-RSS Manager initialized-
+14/03/2023 18:21:15-Event-Base entity initialized-
+14/03/2023 18:21:15-Event-Topics Manager initialized-
+14/03/2023 18:21:15-Event-Base entity initialized-
+14/03/2023 18:21:15-Event-NewsFeedHandler initialized-
+14/03/2023 18:21:15-Event-Ynet Manager initialized-
+14/03/2023 18:21:15-Event-Hourly News Scan is started-
+14/03/2023 18:21:15-Event-Hourly News Scan is started-
+14/03/2023 18:24:02-Event-Base entity initialized-
+14/03/2023 18:25:42-Event-Base entity initialized-
+14/03/2023 18:26:14-Event-Base entity initialized-
+14/03/2023 18:26:14-Event-RSS Manager initialized-
+14/03/2023 18:28:13-Event-Base entity initialized-
+14/03/2023 18:33:36-Event-Base entity initialized-
+14/03/2023 18:35:04-Event-Base entity initialized-
+14/03/2023 18:41:32-Event-Base entity initialized-
+14/03/2023 18:43:28-Event-Base entity initialized-
+14/03/2023 18:43:28-Event-RSS Manager initialized-
+14/03/2023 18:43:28-Event-Base entity initialized-
+14/03/2023 18:43:28-Event-Topics Manager initialized-
+14/03/2023 18:43:28-Event-Base entity initialized-
+14/03/2023 18:43:28-Event-NewsFeedHandler initialized-
+14/03/2023 18:43:28-Event-Ynet Manager initialized-
+14/03/2023 18:43:28-Event-Hourly News Scan is started-
+14/03/2023 18:43:28-Event-Hourly News Scan is started-
+14/03/2023 19:07:02-Event-Base entity initialized-
+14/03/2023 19:07:02-Event-RSS Manager initialized-
+14/03/2023 19:07:02-Event-Base entity initialized-
+14/03/2023 19:07:02-Event-Topics Manager initialized-
+14/03/2023 19:07:02-Event-Base entity initialized-
+14/03/2023 19:07:02-Event-NewsFeedHandler initialized-
+14/03/2023 19:07:02-Event-Ynet Manager initialized-
+14/03/2023 19:07:02-Event-Hourly News Scan is started-
+14/03/2023 19:12:20-Event-Base entity initialized-
+14/03/2023 19:12:20-Event-RSS Manager initialized-
+14/03/2023 19:12:20-Event-Base entity initialized-
+14/03/2023 19:25:06-Event-Base entity initialized-
+14/03/2023 19:25:06-Event-RSS Manager initialized-
+14/03/2023 19:25:06-Event-Base entity initialized-
+14/03/2023 19:25:06-Event-Topics Manager initialized-
+14/03/2023 19:25:06-Event-Base entity initialized-
+14/03/2023 19:25:06-Event-NewsFeedHandler initialized-
+14/03/2023 19:25:06-Event-Ynet Manager initialized-
+14/03/2023 19:25:06-Event-Hourly News Scan is started-
+14/03/2023 19:25:06-Event-Hourly News Scan is started-
+14/03/2023 19:26:19-Event-Base entity initialized-
+14/03/2023 19:26:19-Event-RSS Manager initialized-
+14/03/2023 19:26:19-Event-Base entity initialized-
+14/03/2023 19:26:19-Event-Topics Manager initialized-
+14/03/2023 19:26:19-Event-Base entity initialized-
+14/03/2023 19:26:19-Event-NewsFeedHandler initialized-
+14/03/2023 19:26:19-Event-Ynet Manager initialized-
+14/03/2023 19:26:19-Event-Hourly News Scan is started-
+14/03/2023 19:26:19-Event-Hourly News Scan is started-
+14/03/2023 19:27:45-Event-Base entity initialized-
+14/03/2023 19:27:45-Event-RSS Manager initialized-
+14/03/2023 19:27:45-Event-Base entity initialized-
+14/03/2023 19:29:18-Event-Base entity initialized-
+14/03/2023 19:29:18-Event-RSS Manager initialized-
+14/03/2023 19:29:18-Event-Base entity initialized-
+14/03/2023 19:30:44-Event-Base entity initialized-
+14/03/2023 19:30:44-Event-RSS Manager initialized-
+14/03/2023 19:38:21-Event-Base entity initialized-
+14/03/2023 19:43:21-Event-Base entity initialized-
+14/03/2023 20:32:50-Event-Base entity initialized-
+14/03/2023 20:59:09-Event-Base entity initialized-
+14/03/2023 20:59:09-Event-RSS Manager initialized-
+14/03/2023 21:19:51-Event-Base entity initialized-
+14/03/2023 21:19:51-Event-RSS Manager initialized-
+15/03/2023 10:41:22-Event-Base entity initialized-
+15/03/2023 10:41:22-Event-RSS Manager initialized-
+15/03/2023 10:41:22-Event-Base entity initialized-
+15/03/2023 12:01:16-Event-Base entity initialized-
+15/03/2023 12:01:16-Event-RSS Manager initialized-
+15/03/2023 12:01:16-Event-Base entity initialized-
+15/03/2023 12:01:16-Event-Topics Manager initialized-
+15/03/2023 12:01:16-Event-Base entity initialized-
+15/03/2023 12:01:16-Event-NewsFeedHandler initialized-
+15/03/2023 12:01:16-Event-Ynet Manager initialized-
+15/03/2023 12:01:17-Event-Hourly News Scan is started-
+15/03/2023 12:03:58-Event-Base entity initialized-
+15/03/2023 12:04:47-Event-Base entity initialized-
+15/03/2023 12:06:00-Event-Base entity initialized-
+15/03/2023 12:06:00-Event-RSS Manager initialized-
+15/03/2023 12:48:55-Event-Base entity initialized-
+15/03/2023 12:48:55-Event-RSS Manager initialized-
+15/03/2023 12:48:55-Event-Base entity initialized-
+15/03/2023 12:51:13-Event-Base entity initialized-
+15/03/2023 12:51:13-Event-RSS Manager initialized-
+15/03/2023 12:54:58-Event-Base entity initialized-
+15/03/2023 12:54:58-Event-RSS Manager initialized-
+15/03/2023 12:54:58-Event-Base entity initialized-
+15/03/2023 12:54:58-Event-Topics Manager initialized-
+15/03/2023 12:54:58-Event-Base entity initialized-
+15/03/2023 12:54:58-Event-NewsFeedHandler initialized-
+15/03/2023 12:54:58-Event-Ynet Manager initialized-
+15/03/2023 12:54:59-Event-Hourly News Scan is started-
+15/03/2023 12:54:59-Event-Hourly News Scan is started-
+15/03/2023 12:55:07-Exception-Incorrect syntax near 'אוטיסט'.-Incorrect syntax near 'אוטיסט'.
+15/03/2023 12:55:07-Exception-Incorrect syntax near 'אוטיסט'.-Incorrect syntax near 'אוטיסט'.
+15/03/2023 16:05:20-Event-Base entity initialized-
+15/03/2023 16:05:20-Event-RSS Manager initialized-
+15/03/2023 16:05:20-Event-Base entity initialized-
+15/03/2023 16:05:20-Event-Topics Manager initialized-
+15/03/2023 16:05:20-Event-Base entity initialized-
+15/03/2023 16:05:20-Event-NewsFeedHandler initialized-
+15/03/2023 16:05:20-Event-Ynet Manager initialized-
+15/03/2023 16:05:20-Event-Hourly News Scan is started-
+15/03/2023 16:05:20-Event-Hourly News Scan is started-
+15/03/2023 16:05:24-Exception-Incorrect syntax near 'אוטיסט'.-Incorrect syntax near 'אוטיסט'.
+15/03/2023 16:05:24-Exception-Incorrect syntax near 'אוטיסט'.-Incorrect syntax near 'אוטיסט'.
+15/03/2023 16:06:58-Event-Base entity initialized-
+15/03/2023 16:06:58-Event-RSS Manager initialized-
+15/03/2023 16:06:58-Event-Base entity initialized-
+15/03/2023 16:06:58-Event-Topics Manager initialized-
+15/03/2023 16:06:58-Event-Base entity initialized-
+15/03/2023 16:06:58-Event-NewsFeedHandler initialized-
+15/03/2023 16:06:58-Event-Ynet Manager initialized-
+15/03/2023 16:06:58-Event-Hourly News Scan is started-
+15/03/2023 16:06:58-Event-Hourly News Scan is started-
+15/03/2023 16:08:07-Exception-Incorrect syntax near 'אוטיסט'.-Incorrect syntax near 'אוטיסט'.
+15/03/2023 16:08:58-Event-Base entity initialized-
+15/03/2023 16:16:51-Event-Base entity initialized-
+15/03/2023 16:16:51-Event-RSS Manager initialized-
+15/03/2023 16:16:51-Event-Base entity initialized-
+15/03/2023 16:16:51-Event-Topics Manager initialized-
+15/03/2023 16:16:51-Event-Base entity initialized-
+15/03/2023 16:16:51-Event-NewsFeedHandler initialized-
+15/03/2023 16:16:51-Event-Ynet Manager initialized-
+15/03/2023 16:16:51-Event-Hourly News Scan is started-
+15/03/2023 16:20:07-Event-Base entity initialized-
+15/03/2023 16:40:58-Event-Base entity initialized-
+15/03/2023 16:40:58-Event-RSS Manager initialized-
+15/03/2023 16:59:38-Event-Base entity initialized-
+15/03/2023 17:05:47-Event-Base entity initialized-
+15/03/2023 17:05:47-Event-RSS Manager initialized-
+15/03/2023 17:10:07-Event-Base entity initialized-
+15/03/2023 17:21:09-Event-Base entity initialized-
+15/03/2023 17:24:02-Event-Base entity initialized-
+15/03/2023 17:24:02-Event-RSS Manager initialized-
+15/03/2023 17:24:02-Event-Base entity initialized-
+15/03/2023 17:24:02-Event-Topics Manager initialized-
+15/03/2023 17:24:02-Event-Base entity initialized-
+15/03/2023 17:24:02-Event-NewsFeedHandler initialized-
+15/03/2023 17:24:02-Event-Ynet Manager initialized-
+15/03/2023 17:24:02-Event-Hourly News Scan is started-
+15/03/2023 17:24:02-Event-Hourly News Scan is started-
+15/03/2023 17:24:10-Event-Hourly News Scan is finished-
+15/03/2023 17:24:10-Event-Hourly News Scan is finished-
+15/03/2023 17:51:46-Event-Base entity initialized-
+15/03/2023 18:03:59-Event-Base entity initialized-
+15/03/2023 18:03:59-Event-RSS Manager initialized-
+15/03/2023 18:03:59-Event-Base entity initialized-
+15/03/2023 18:03:59-Event-Topics Manager initialized-
+15/03/2023 18:03:59-Event-Base entity initialized-
+15/03/2023 18:03:59-Event-NewsFeedHandler initialized-
+15/03/2023 18:07:17-Event-Base entity initialized-
+15/03/2023 18:07:17-Event-RSS Manager initialized-
+15/03/2023 18:07:17-Event-Base entity initialized-
+15/03/2023 18:07:17-Event-Topics Manager initialized-
+15/03/2023 18:07:17-Event-Base entity initialized-
+15/03/2023 18:07:17-Event-NewsFeedHandler initialized-
+15/03/2023 18:16:59-Event-Base entity initialized-
+15/03/2023 18:16:59-Event-RSS Manager initialized-
+15/03/2023 18:17:06-Exception-No such host is known. (rss.walla.co.il:443)-No such host is known. (rss.walla.co.il:443)
+15/03/2023 18:16:59-Event-Topics Manager initialized-
+15/03/2023 18:18:06-Event-Base entity initialized-
+15/03/2023 18:18:06-Event-RSS Manager initialized-
+15/03/2023 18:18:06-Event-Base entity initialized-
+15/03/2023 18:18:06-Event-Topics Manager initialized-
+15/03/2023 18:20:07-Event-Base entity initialized-
+15/03/2023 18:20:07-Event-RSS Manager initialized-
+15/03/2023 18:25:51-Event-Base entity initialized-
+15/03/2023 18:25:51-Event-RSS Manager initialized-
+15/03/2023 18:30:36-Event-Base entity initialized-
+15/03/2023 18:30:36-Event-RSS Manager initialized-
+15/03/2023 18:30:36-Event-Base entity initialized-
+15/03/2023 18:30:36-Event-Topics Manager initialized-
+15/03/2023 18:30:36-Event-Base entity initialized-
+15/03/2023 18:30:36-Event-NewsFeedHandler initialized-
+15/03/2023 18:30:36-Event-Maariv Manager initialized-
+15/03/2023 18:40:25-Event-Base entity initialized-
+15/03/2023 18:43:38-Event-Base entity initialized-
+15/03/2023 18:43:38-Event-RSS Manager initialized-
+15/03/2023 18:43:38-Event-Base entity initialized-
+15/03/2023 18:43:38-Event-Topics Manager initialized-
+15/03/2023 18:43:38-Event-Base entity initialized-
+15/03/2023 18:43:38-Event-NewsFeedHandler initialized-
+15/03/2023 18:43:38-Event-Mako Manager initialized-
+15/03/2023 18:43:38-Event-Hourly News Scan is started-
+15/03/2023 18:49:04-Event-Base entity initialized-
+15/03/2023 18:53:07-Event-Base entity initialized-
+15/03/2023 18:53:07-Event-Topics Manager initialized-
+15/03/2023 18:53:07-Event-Base entity initialized-
+15/03/2023 18:53:07-Event-NewsFeedHandler initialized-
+15/03/2023 18:53:07-Event-Ynet Manager initialized-
+15/03/2023 18:53:07-Event-Base entity initialized-
+15/03/2023 18:58:36-Event-Base entity initialized-
+15/03/2023 18:58:36-Event-Topics Manager initialized-
+15/03/2023 18:58:36-Event-Base entity initialized-
+15/03/2023 18:58:36-Event-NewsFeedHandler initialized-
+15/03/2023 18:58:36-Event-Ynet Manager initialized-
+15/03/2023 18:58:36-Event-Base entity initialized-
+15/03/2023 18:58:36-Event-NewsFeedHandler initialized-
+15/03/2023 18:58:36-Event-Walla Manager initialized-
+15/03/2023 18:58:36-Event-Base entity initialized-
+15/03/2023 18:58:36-Event-NewsFeedHandler initialized-
+15/03/2023 18:58:36-Event-Maariv Manager initialized-
+15/03/2023 18:58:36-Event-Base entity initialized-
+15/03/2023 18:58:36-Event-NewsFeedHandler initialized-
+15/03/2023 18:58:36-Event-Mako Manager initialized-
+15/03/2023 19:01:54-Event-Base entity initialized-
+15/03/2023 19:01:54-Event-Topics Manager initialized-
+15/03/2023 19:01:54-Event-Base entity initialized-
+15/03/2023 19:01:54-Event-NewsFeedHandler initialized-
+15/03/2023 19:01:54-Event-Ynet Manager initialized-
+15/03/2023 19:01:54-Event-Base entity initialized-
+15/03/2023 19:01:54-Event-NewsFeedHandler initialized-
+15/03/2023 19:01:54-Event-Walla Manager initialized-
+15/03/2023 19:01:54-Event-Base entity initialized-
+15/03/2023 19:01:54-Event-NewsFeedHandler initialized-
+15/03/2023 19:01:54-Event-Maariv Manager initialized-
+15/03/2023 19:01:54-Event-Base entity initialized-
+15/03/2023 19:01:54-Event-NewsFeedHandler initialized-
+15/03/2023 19:01:54-Event-Mako Manager initialized-
+15/03/2023 19:44:05-Event-Base entity initialized-
+15/03/2023 19:44:05-Event-Topics Manager initialized-
+15/03/2023 19:44:05-Event-Base entity initialized-
+15/03/2023 19:44:05-Event-NewsFeedHandler initialized-
+15/03/2023 19:44:05-Event-Ynet Manager initialized-
+15/03/2023 19:44:05-Event-Base entity initialized-
+15/03/2023 19:44:05-Event-NewsFeedHandler initialized-
+15/03/2023 19:44:05-Event-Walla Manager initialized-
+15/03/2023 19:44:05-Event-Base entity initialized-
+15/03/2023 19:44:05-Event-NewsFeedHandler initialized-
+15/03/2023 19:44:05-Event-Maariv Manager initialized-
+15/03/2023 19:44:05-Event-Base entity initialized-
+15/03/2023 19:44:05-Event-NewsFeedHandler initialized-
+15/03/2023 19:44:05-Event-Mako Manager initialized-

@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/cmhcyaQo/696lxMhG0xWTIA5Vz16vfKuHsANCZrW/ZnXjcW46Us4Ofm6sedzBVtrIS5cdhBsLkH6ough9aD6A==",
+  "dgSpecHash": "0DKKFKw4DNNGZ+gHdv0fQ56gRbMQqlA7pg7xMsQxIF6PUG3CLO6sU91qcypAF7KKWymp5X54ES1rS/PapQMlsg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.WebApi\\BreakingNews.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.3\\microsoft.aspnetcore.openapi.7.0.3.nupkg.sha512",
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

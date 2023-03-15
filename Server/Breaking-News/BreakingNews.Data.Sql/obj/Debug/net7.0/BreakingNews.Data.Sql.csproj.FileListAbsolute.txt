@@ -15,3 +15,5 @@ C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-N
 C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Data.Sql\obj\Debug\net7.0\refint\BreakingNews.Data.Sql.dll
 C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Data.Sql\obj\Debug\net7.0\BreakingNews.Data.Sql.pdb
 C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Data.Sql\obj\Debug\net7.0\ref\BreakingNews.Data.Sql.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Data.Sql\bin\Debug\net7.0\BreakingNews.Models.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Data.Sql\bin\Debug\net7.0\BreakingNews.Models.pdb

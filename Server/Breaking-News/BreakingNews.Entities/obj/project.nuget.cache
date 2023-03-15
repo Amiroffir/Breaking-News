@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "QZ1TE5L2mJ+NnsG2Ixn7AFhPWzwlrH9YHJjUODfWK3ipSwFEZYefKDiHyp6wmq459NkkL80aMO4ZnDWt12QlPw==",
+  "dgSpecHash": "fWykrWNhbirMHCU560XE2LbNluNQ3PMxX8n05ZBgL9QzYUBRjOUvZF9nv6IlsU14xCDvoGIi4/DZRGLuCVhoeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.Entities\\BreakingNews.Entities.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\htmlagilitypack\\1.11.46\\htmlagilitypack.1.11.46.nupkg.sha512",
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",

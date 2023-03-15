@@ -24,4 +24,10 @@
     <ProjectReference Include="..\BreakingNews.WebApi\BreakingNews.WebApi.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Utilities">
+      <HintPath>..\..\..\..\..\Zionet Part C\Utilities\bin\Debug\net6.0\Utilities.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
