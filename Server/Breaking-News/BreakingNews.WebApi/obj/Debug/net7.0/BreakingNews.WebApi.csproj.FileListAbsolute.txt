@@ -49,3 +49,4 @@ C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-N
 C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.WebApi\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.WebApi\obj\Debug\net7.0\BreakingNews.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.WebApi\bin\Debug\net7.0\HtmlAgilityPack.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.WebApi\bin\Debug\net7.0\Newtonsoft.Json.dll

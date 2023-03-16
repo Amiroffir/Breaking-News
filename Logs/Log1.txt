@@ -361,3 +361,54 @@ NewsSource
 15/03/2023 19:44:05-Event-Base entity initialized-
 15/03/2023 19:44:05-Event-NewsFeedHandler initialized-
 15/03/2023 19:44:05-Event-Mako Manager initialized-
+15/03/2023 19:50:37-Event-Base entity initialized-
+15/03/2023 19:50:37-Event-Topics Manager initialized-
+15/03/2023 19:50:37-Event-Base entity initialized-
+15/03/2023 19:50:37-Event-NewsFeedHandler initialized-
+15/03/2023 19:50:37-Event-Ynet Manager initialized-
+15/03/2023 19:50:37-Event-Base entity initialized-
+15/03/2023 19:50:37-Event-NewsFeedHandler initialized-
+15/03/2023 19:50:37-Event-Walla Manager initialized-
+15/03/2023 19:50:37-Event-Base entity initialized-
+15/03/2023 19:50:37-Event-NewsFeedHandler initialized-
+15/03/2023 19:50:37-Event-Maariv Manager initialized-
+15/03/2023 19:50:37-Event-Base entity initialized-
+15/03/2023 19:50:37-Event-NewsFeedHandler initialized-
+15/03/2023 19:50:37-Event-Mako Manager initialized-
+15/03/2023 21:07:55-Event-Base entity initialized-
+15/03/2023 21:07:55-Event-Topics Manager initialized-
+15/03/2023 21:07:55-Event-Base entity initialized-
+15/03/2023 21:07:55-Event-Articles Manager initialized-
+15/03/2023 21:07:55-Event-Base entity initialized-
+15/03/2023 21:07:55-Event-NewsFeedHandler initialized-
+15/03/2023 21:07:55-Event-Ynet Manager initialized-
+15/03/2023 21:07:55-Event-Base entity initialized-
+15/03/2023 21:07:55-Event-NewsFeedHandler initialized-
+15/03/2023 21:07:55-Event-Walla Manager initialized-
+15/03/2023 21:07:55-Event-Base entity initialized-
+15/03/2023 21:07:55-Event-NewsFeedHandler initialized-
+15/03/2023 21:07:55-Event-Maariv Manager initialized-
+15/03/2023 21:07:55-Event-Base entity initialized-
+15/03/2023 21:07:55-Event-NewsFeedHandler initialized-
+15/03/2023 21:07:55-Event-Mako Manager initialized-
+15/03/2023 21:09:36-Exception-The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.-The request was canceled due to the configured HttpClient.Timeout of 100 seconds elapsing.
+15/03/2023 22:01:06-Event-Base entity initialized-
+15/03/2023 22:01:06-Event-Topics Manager initialized-
+15/03/2023 22:01:06-Event-Base entity initialized-
+15/03/2023 22:01:06-Event-Articles Manager initialized-
+15/03/2023 22:01:06-Event-Base entity initialized-
+15/03/2023 22:01:06-Event-NewsFeedHandler initialized-
+15/03/2023 22:01:06-Event-Ynet Manager initialized-
+15/03/2023 22:01:06-Event-Base entity initialized-
+15/03/2023 22:01:06-Event-NewsFeedHandler initialized-
+15/03/2023 22:01:06-Event-Walla Manager initialized-
+15/03/2023 22:01:06-Event-Base entity initialized-
+15/03/2023 22:01:06-Event-NewsFeedHandler initialized-
+16/03/2023 11:12:30-Event-Base entity initialized-
+16/03/2023 11:12:30-Event-Topics Manager initialized-
+16/03/2023 11:12:30-Event-Base entity initialized-
+16/03/2023 11:12:30-Event-Articles Manager initialized-
+16/03/2023 13:16:02-Event-Base entity initialized-
+16/03/2023 13:16:02-Event-Topics Manager initialized-
+16/03/2023 13:16:02-Event-Base entity initialized-
+16/03/2023 13:16:02-Event-Articles Manager initialized-

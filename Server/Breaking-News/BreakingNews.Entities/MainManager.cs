@@ -20,10 +20,11 @@ namespace BreakingNews.Entities
 			LogManager = new LogManager();
 			LogManager.Init(LogManager.LogType.File);
 			TopicsManager = new TopicsManager(LogManager);
-			YnetManager = new YnetManager(LogManager);
-			WallaManager = new WallaManager(LogManager);
-			MaarivManager = new MaarivManager(LogManager);
-			MakoManager = new MakoManager(LogManager);
+			ArticlesManager = new ArticlesManager(LogManager);
+			//YnetManager = new YnetManager(LogManager);
+			//WallaManager = new WallaManager(LogManager);
+			//MaarivManager = new MaarivManager(LogManager);
+			//MakoManager = new MakoManager(LogManager);
 			TopicsList = new List<Topic>();
 
 
@@ -47,6 +48,7 @@ namespace BreakingNews.Entities
 		public MaarivManager MaarivManager;
 		public MakoManager MakoManager;
 		public TopicsManager TopicsManager;
+		public ArticlesManager ArticlesManager;
 		public List<Topic> TopicsList;
 		// Add all entities here
 	}

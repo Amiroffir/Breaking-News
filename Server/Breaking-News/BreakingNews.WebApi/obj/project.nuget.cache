@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0DKKFKw4DNNGZ+gHdv0fQ56gRbMQqlA7pg7xMsQxIF6PUG3CLO6sU91qcypAF7KKWymp5X54ES1rS/PapQMlsg==",
+  "dgSpecHash": "a0IP9abeDSIISx0ag9a/JCTUQmqGsfVWuTgTgAFfHw+2f9eXRR3d0D91OaXzz2ujK11TAVgbNJrxG/WGxuZKjw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Amir Offir\\VSC-workspace\\Zionet General\\Breaking-News\\Server\\Breaking-News\\BreakingNews.WebApi\\BreakingNews.WebApi.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Amir Offir\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Amir Offir\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

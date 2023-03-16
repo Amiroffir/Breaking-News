@@ -1,7 +1,9 @@
-﻿using BreakingNews.DAL;
+﻿using BreakingMews.Models;
+using BreakingNews.DAL;
 using BreakingNews.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,34 @@ namespace BreakingNews.Data.Sql
 	public class ArticlesSQL: BaseSQL
 	{
 		public ArticlesSQL(LogManager logManager) : base(logManager) { }
+
+		public List<Article> GetArticles()
+		{
+			List<Article> articles = new List<Article>();
+			try
+			{
+				SQLQuery.RunCommandResult("SELECT * FROM Articles", MapDataIntoArticles);
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+			}
+			return articles;
+		}
+
+		private object MapDataIntoArticles(SqlDataReader reader)
+		{
+			List<Article> articlesList = new List<Article>();
+
+			while (reader.Read())
+			{
+
+				Article articleToAdd = new Article();
+				Services.Mappers.ArticleMapper.DBMapper.Map(reader, articleToAdd);
+				articlesList.Add(articleToAdd);
+			}
+			return articlesList;
+		}
 
 		public void InsertArticles(List<Article> articlesToDB)
 		{
