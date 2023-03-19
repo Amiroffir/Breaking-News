@@ -1,5 +1,8 @@
-﻿using BreakingNews.Data.Sql;
+﻿using BreakingMews.Models;
+using BreakingNews.Data.Sql;
+using BreakingNews.Data.Sql.Services;
 using BreakingNews.Models;
+using System.Data;
 using System.Text.RegularExpressions;
 using System.Xml;
 using Utilities;
@@ -13,60 +16,60 @@ namespace BreakingNews.Entities
 			LogManager.LogEvent("NewsFeedHandler initialized");
 			Source = source;
 		}
-		
+
 		const int MaxArticlesItems = 10; // max articles to be retrieved from each topic
 		private NewsSources Source;
 
 
-		public async Task GetNewsFeedAsync()
+		public async Task GetLatestNewsAsync()
 		{
 			while (true)
 			{
-				List<XmlDocument> xmlDocs = await GetAllRSSFeeds(Source);
-				List<Article> articlesToDB = XmlDocsHandler(xmlDocs);
+				
+				List<List<Article>> articlesToDB = await GetAllRSSFeeds(Source);
 				InsertArticlesToDB(articlesToDB);
-				Thread.Sleep(3600000);
+				Thread.Sleep(3600000); // Thread sleeps for 1 hour
 			}
 		}
 
-		private void InsertArticlesToDB(List<Article> articlesToDB)
+		/// <summary>
+		/// Get all the articles from RSS links, then insert them into list of lists ordered by topic
+		/// </summary>
+		public async Task<List<List<Article>>> GetAllRSSFeeds(NewsSources src)
 		{
-			ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
-			articlesSQL.InsertArticles(articlesToDB);
-		}
+			
+			var parallelTasks = new List<Task<List<Article>>>(); // list of tasks to be executed in parallel
+			List<Topic> topicsBySource = MainManager.Instance.TopicsManager.GetTopicsBySource(src).ToList(); // get all topics for the source
 
-		public async Task<List<XmlDocument>> GetAllRSSFeeds(NewsSources src)
-		{
-			List<XmlDocument> xmlDocs = new List<XmlDocument>();
-			var tasks = new List<Task<string>>();
-			List<string> rssLinks = MainManager.Instance.TopicsManager.GetTopicsBySource(src).Select(x => x.RSSLink).ToList();
-
-			foreach (var url in rssLinks)
+			foreach (Topic topic in topicsBySource)
 			{
-				tasks.Add(GetRSSFeed(url));
+				parallelTasks.Add(GetRSSFeed(topic));
 			}
 
-			var results = await Task.WhenAll(tasks);
-			foreach (var res in results)
-			{
-				XmlDocument xmlDoc = new XmlDocument();
-				xmlDoc.LoadXml(res);
-				xmlDocs.Add(xmlDoc);
-			}
+			var results = await Task.WhenAll(parallelTasks);
 
-			return xmlDocs;
+			return results.ToList();
 		}
 
-		public async Task<string> GetRSSFeed(string url)
+		/// <summary>
+		/// Get all the articles from RSS link by topic
+		/// </summary>
+		public async Task<List<Article>> GetRSSFeed(Topic topic)
 		{
 			try
 			{
 				using (var client = new HttpClient())
 				{
-					var response = await client.GetAsync(url);
+					var response = await client.GetAsync(topic.RSSLink);
 					if (response.IsSuccessStatusCode)
 					{
-						return await response.Content.ReadAsStringAsync();
+						List<Article> articlesByTopic;
+						XmlDocument xmlDoc = new XmlDocument();
+						
+						xmlDoc.LoadXml(await response.Content.ReadAsStringAsync());
+						articlesByTopic = XmlDocHandler(xmlDoc, MaxArticlesItems, topic.TopicID, (int)Source);
+						
+						return articlesByTopic;
 					}
 					else
 					{
@@ -82,24 +85,48 @@ namespace BreakingNews.Entities
 				return null;
 			}
 		}
-		
-		public List<Article> XmlDocsHandler(List<XmlDocument> xmlDocuments)
+
+		/// <summary>
+		///  Handle the XML document and return a list of articles
+		///  </summary>
+		public virtual List<Article> XmlDocHandler(XmlDocument xmlDoc, int maxArticles, int topicID, int srcID)
 		{
-			List<Article> articlesToDB = new List<Article>();
-			
-			foreach (XmlDocument xmlDoc in xmlDocuments)
+			if (xmlDoc == null)
 			{
-				List<Article> articlesToAdd = XmlDocHandler(xmlDoc, MaxArticlesItems);
-				articlesToDB.AddRange(articlesToAdd);
+				return null;
 			}
-			return articlesToDB;
+
+			List<Article> mappedArticles = new List<Article>();
+			XmlNodeList itemNodes = xmlDoc.SelectNodes("//item");
+
+			// loop through the item nodes and extract them into Article properties with AutoMapper
+			foreach (XmlNode item in itemNodes)
+			{
+				Article mappedArticle = new Article();
+
+				// Map the XmlNode to an Article object
+				mappedArticle = Mappers.ArticleMapper.Mapper.Map(item, mappedArticle);
+
+				// Additional custom mapping
+				mappedArticle.ImgUrl = ExtractImage(mappedArticle.ImgUrl);
+				mappedArticle.Description = ExtractDescriptionText(mappedArticle.Description);
+				mappedArticle.NewsSource = srcID;
+				mappedArticle.TopicID = topicID;
+
+				// Add the article to the list
+				mappedArticles.Add(mappedArticle);
+
+				if (mappedArticles.Count() == 10)
+				{
+					break;
+				}
+			}
+			return mappedArticles;
 		}
-		
-		public abstract List<Article> XmlDocHandler(XmlDocument xmlDoc, int maxArticles);
-		
+
 		public virtual string ExtractImage(string Node)
 		{
-			
+
 			if (Node != null)
 			{
 				string description = Node;
@@ -113,21 +140,28 @@ namespace BreakingNews.Entities
 			return null;
 		}
 
-		public virtual string ExtractDescriptionText(string description)
+		public abstract string ExtractDescriptionText(string description);
+		//public virtual string ExtractDescriptionText(string description)
+		//{
+		//	string descText = description;
+		//	Match match = Regex.Match(descText, @"<div>(.*?)</div>");
+		//	if (match.Success)
+		//	{
+		//		string stringToRemove = match.Groups[0].Value;
+		//		int index = descText.IndexOf(stringToRemove);
+		//		descText = descText.Remove(index, stringToRemove.Length);
+		//		return descText;
+		//	}
+		//	else
+		//	{
+		//		return null;
+		//	}
+		//}
+
+		private void InsertArticlesToDB(List<List<Article>> articlesToDB)
 		{
-			string descText = description;
-			Match match = Regex.Match(descText, @"<div>(.*?)</div>");
-			if (match.Success)
-			{
-				string stringToRemove = match.Groups[0].Value;
-				int index = descText.IndexOf(stringToRemove);
-				descText = descText.Remove(index, stringToRemove.Length);
-				return descText;
-			}
-			else
-			{
-				return null;
-			}
+			ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
+			articlesSQL.InsertArticles(articlesToDB);
 		}
 
 	}

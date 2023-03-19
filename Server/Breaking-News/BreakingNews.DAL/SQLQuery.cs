@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace BreakingNews.DAL
@@ -95,6 +96,27 @@ namespace BreakingNews.DAL
 			return ret;
 		}
 
+		// Function that able to run query with table-valued parameter
+		public static void RunNonQueryWithTVP(string sqlQ, string tvpName, DataTable tvp)
+		{
+			using (SqlConnection connection = new SqlConnection(connectionString))
+			{
+				try
+				{
+					connection.Open();
+					using (SqlCommand command = new SqlCommand(sqlQ, connection))
+					{
+						command.CommandType = CommandType.StoredProcedure;
+						command.Parameters.AddWithValue(tvpName, tvp).SqlDbType = SqlDbType.Structured;
+						command.ExecuteNonQuery();
+					}
+				}
+				catch (SqlException e)
+				{
+					throw e;
+				}
+			}
+		}
 
 		public static void RunNonQuery(string sqlQ)
 		{

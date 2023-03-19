@@ -21,10 +21,10 @@ namespace BreakingNews.Entities
 			LogManager.Init(LogManager.LogType.File);
 			TopicsManager = new TopicsManager(LogManager);
 			ArticlesManager = new ArticlesManager(LogManager);
-			//YnetManager = new YnetManager(LogManager);
-			//WallaManager = new WallaManager(LogManager);
-			//MaarivManager = new MaarivManager(LogManager);
-			//MakoManager = new MakoManager(LogManager);
+			YnetManager = new YnetManager(LogManager);
+			WallaManager = new WallaManager(LogManager);
+			MaarivManager = new MaarivManager(LogManager);
+			MakoManager = new MakoManager(LogManager);
 			TopicsList = new List<Topic>();
 
 

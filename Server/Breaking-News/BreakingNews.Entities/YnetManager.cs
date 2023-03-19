@@ -12,42 +12,44 @@ namespace BreakingNews.Entities
 		{
 	
 			LogManager.LogEvent("Ynet Manager initialized");
-			Task.Run(GetNewsFeedAsync);
+			Task.Run(GetLatestNewsAsync);
 		}
 
-		public override List<Article> XmlDocHandler(XmlDocument xmlDoc, int maxArticles)
-		{
+		//public override List<Article> XmlDocHandler(XmlDocument xmlDoc, int maxArticles,int topicID)
+		//{
+		//	if (xmlDoc == null)
+		//	{
+		//		return null;
+		//	}
+			
+		//	List<Article> mappedArticles = new List<Article>();
+		//	XmlNodeList itemNodes = xmlDoc.SelectNodes("//item");
+			
+		//	// loop through the item nodes and extract them into Article properties with AutoMapper
+		//	foreach (XmlNode item in itemNodes)
+		//	{
+		//		Article mappedArticle = new Article();
 
-			List<Article> mappedArticles = new List<Article>();
-			XmlNodeList itemNodes = xmlDoc.SelectNodes("//item");
+		//		// Map the XmlNode to an Article object
+		//		mappedArticle = Mappers.ArticleMapper.Mapper.Map(item, mappedArticle);
 
-			// loop through the item nodes and extract them into Article properties with AutoMapper
+		//		// Additional custom mapping
+		//		mappedArticle.ImgUrl = ExtractImage(mappedArticle.ImgUrl);
+		//		mappedArticle.Description = ExtractDescriptionText(mappedArticle.Description);
+		//		mappedArticle.NewsSource = (int)NewsSources.Ynet;
+		//		mappedArticle.TopicID = topicID;
 
-			foreach (XmlNode item in itemNodes)
-			{
-				Article mappedArticle = new Article();
+		//		// Add the article to the list
+		//		mappedArticles.Add(mappedArticle);
 
-				// Map the XmlNode to an Article object
-				mappedArticle = Mappers.ArticleMapper.Mapper.Map(item, mappedArticle);
-
-				// Additional custom mapping
-				mappedArticle.ImgUrl = ExtractImage(mappedArticle.ImgUrl);
-				mappedArticle.Description = ExtractDescriptionText(mappedArticle.Description);
-				mappedArticle.NewsSource = (int)NewsSources.Ynet;
-
-				// Add the article to the list
-				mappedArticles.Add(mappedArticle);
-
-				if (mappedArticles.Count() == 10)
-				{
-					break; 
-				}
-
-			}
-			// Todo: To send every article to another function that send to DB 
-			// Or return list of 10 and handle it in the main function
-			return mappedArticles;
-		}
+		//		if (mappedArticles.Count() == 10)
+		//		{
+		//			break; 
+		//		}
+		//	}		
+		//	return mappedArticles;
+		//}
+		
 		public override string ExtractDescriptionText(string description)
 		{
 			string descText = description;

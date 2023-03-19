@@ -1,17 +1,12 @@
-﻿using BreakingMews.Models;
-using BreakingNews.DAL;
+﻿using BreakingNews.DAL;
 using BreakingNews.Models;
-using System;
-using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Utilities;
 
 namespace BreakingNews.Data.Sql
 {
-	public class ArticlesSQL: BaseSQL
+	public class ArticlesSQL : BaseSQL
 	{
 		public ArticlesSQL(LogManager logManager) : base(logManager) { }
 
@@ -29,6 +24,21 @@ namespace BreakingNews.Data.Sql
 			return articles;
 		}
 
+		public void InsertArticles(List<List<Article>> articlesToDB)
+		{
+
+			DataTable table = ConvertToDataTable(articlesToDB);
+			try
+			{
+				SQLQuery.RunNonQueryWithTVP("InsertNewsArticles", "@NewsArticles", table);
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+				throw;
+			}
+		}
+
 		private object MapDataIntoArticles(SqlDataReader reader)
 		{
 			List<Article> articlesList = new List<Article>();
@@ -42,26 +52,29 @@ namespace BreakingNews.Data.Sql
 			}
 			return articlesList;
 		}
-
-		public void InsertArticles(List<Article> articlesToDB)
+		
+		private DataTable ConvertToDataTable(List<List<Article>> articles)
 		{
-			foreach (Article article in articlesToDB)
+			// Create a new DataTable.
+			DataTable table = new DataTable();
+			table.Columns.Add("NewsSource", typeof(int));
+			table.Columns.Add("Headline", typeof(string));
+			table.Columns.Add("Description", typeof(string));
+			table.Columns.Add("Link", typeof(string));
+			table.Columns.Add("ImgUrl", typeof(string));
+			table.Columns.Add("TopicID", typeof(int));
+
+			foreach (List<Article> articlesByTopic in articles)
 			{
-				string a; // To dubugging To delete
-				try
+				if (articlesByTopic != null)
 				{
-					// To dubugging To delete
-					a = $"Insert into Articles (newsSource, [image], headline, [desc],link) values ({article.NewsSource},'{article.ImgUrl}','{article.Headline}','{article.Description}','{article.Link}')";
-					SQLQuery.RunNonQuery($"Insert into Articles (newsSource, [image], headline, [desc],link) values ({article.NewsSource},'{article.ImgUrl}','{article.Headline.Replace("'", "")}','{article.Description.Replace("'","")}','{article.Link}')");
-				}
-				catch (Exception ex)
-				{
-					a = ""; // To dubugging To delete
-					LogManager.LogException(ex.Message, ex);
-					throw;
+					foreach (Article article in articlesByTopic)
+					{
+						table.Rows.Add(article.NewsSource, article.Headline, article.Description, article.Link, article.ImgUrl, article.TopicID);
+					}
 				}
 			}
+			return table;
 		}
 	}
-	
 }

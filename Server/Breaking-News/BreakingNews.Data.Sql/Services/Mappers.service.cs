@@ -19,8 +19,8 @@ namespace BreakingNews.Data.Sql.Services
             private static MapperConfiguration config = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<SqlDataReader, Topic>()
-                    .ForMember(dest => dest.TopicID, opt => opt.MapFrom(src => src["id"]))
-                    .ForMember(dest => dest.TopicName, opt => opt.MapFrom(src => src["topicName"]))
+                    .ForMember(dest => dest.TopicID, opt => opt.MapFrom(src => src["topicIndex"]))
+					.ForMember(dest => dest.TopicName, opt => opt.MapFrom(src => src["topicName"]))
                     .ForMember(dest => dest.NewsSource, opt => opt.MapFrom(src => src["newsSource"]))
                     .ForMember(dest => dest.RSSLink, opt => opt.MapFrom(src => src["RSSLink"]));
             });
