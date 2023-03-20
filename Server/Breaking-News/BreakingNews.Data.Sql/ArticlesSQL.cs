@@ -1,5 +1,7 @@
-﻿using BreakingNews.DAL;
+﻿using BreakingMews.Models;
+using BreakingNews.DAL;
 using BreakingNews.Models;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using Utilities;
@@ -9,13 +11,16 @@ namespace BreakingNews.Data.Sql
 	public class ArticlesSQL : BaseSQL
 	{
 		public ArticlesSQL(LogManager logManager) : base(logManager) { }
-
-		public List<Article> GetArticles()
+		
+		public List<Article> GetArticles(List<int> selectedTopics)
 		{
+
+			string topicIDS = string.Join(",", selectedTopics);
 			List<Article> articles = new List<Article>();
 			try
 			{
-				SQLQuery.RunCommandResult("SELECT * FROM Articles", MapDataIntoArticles);
+				
+			articles =	(List<Article>)SQLQuery.RunCommandResult($"GetLatestNewsArticlesBySelectedTopics '{topicIDS}';", MapDataIntoArticles);
 			}
 			catch (Exception ex)
 			{
@@ -37,6 +42,34 @@ namespace BreakingNews.Data.Sql
 				LogManager.LogException(ex.Message, ex);
 				throw;
 			}
+		}
+
+		public void UpdatePopularity(int articleID)
+		{
+			try
+			{
+				SQLQuery.RunNonQuery($"UpdateNewsArticlePopularity {articleID}");
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+				throw;
+			}
+		}
+
+		public List<Article> GetTrendingNews(List<int> topicIDS)
+		{
+			string topicIDSString = string.Join(",", topicIDS);
+			List<Article> articles = new List<Article>();
+			try
+			{
+				articles = (List<Article>)SQLQuery.RunCommandResult($"GetTrendingNews '{topicIDSString}'", MapDataIntoArticles);
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+			}
+			return articles;
 		}
 
 		private object MapDataIntoArticles(SqlDataReader reader)
@@ -75,6 +108,21 @@ namespace BreakingNews.Data.Sql
 				}
 			}
 			return table;
+		}
+
+		public List<Article> GetExploreNews(List<int> topicIDS)
+		{
+			string topicIDSString = string.Join(",", topicIDS);
+			List<Article> articles = new List<Article>();
+			try
+			{
+				articles = (List<Article>)SQLQuery.RunCommandResult($"GetExploreNews '{topicIDSString}'", MapDataIntoArticles);
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+			}
+			return articles;
 		}
 	}
 }

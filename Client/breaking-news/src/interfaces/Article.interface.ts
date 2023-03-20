@@ -1,7 +1,9 @@
 export interface Article {
-  articleID: number;
-  articleTitle: string;
-  articleDescription: string;
-  articleImage: string;
-  articleLink: string;
+  id: number;
+  headline: string;
+  description: string;
+  imgUrl: string;
+  link: string;
+  newsSource: number;
+  topicID: number;
 }

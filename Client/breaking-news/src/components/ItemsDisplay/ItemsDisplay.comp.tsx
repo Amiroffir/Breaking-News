@@ -1,5 +1,7 @@
+import { log } from "console";
 import React from "react";
 import { Article } from "../../interfaces/Article.interface";
+import { updatePopularityInDB } from "../../services/articles.service";
 import "./items-display.scss";
 
 interface ItemsDisplayProps {
@@ -7,17 +9,32 @@ interface ItemsDisplayProps {
 }
 
 export const ItemsDisplay = (articlesList: ItemsDisplayProps) => {
+  console.log("articlesList", articlesList.articlesList);
+
+  const setPopularity = (id: number): void => {
+    updatePopularityInDB(id);
+  };
+
   return (
-    <>
-      {articlesList.articlesList &&
-        articlesList.articlesList.map((article) => (
-          <div key={article.articleID} className="card">
-            <div className="card-body">
-              <h5 className="card-title">{article.articleTitle}</h5>
-              <p className="card-text">{article.articleDescription}</p>
-            </div>
+    <div className="items-topic-group">
+      {articlesList.articlesList?.map((article: Article) => (
+        <div className="item card" key={article.id}>
+          <div className="item__title card-title">{article.headline}</div>
+          <div className="item__content">{article.description}</div>
+          {/* <div className="item__img">
+            <img src={article.imgUrl} alt="img" />
+          </div> */}
+          <div className="item__link">
+            <a
+              onClick={() => setPopularity(article.id)}
+              href={article.link}
+              target="_blank"
+            >
+              לכתבה המלאה
+            </a>
           </div>
-        ))}
-    </>
+        </div>
+      ))}
+    </div>
   );
 };

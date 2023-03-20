@@ -18,7 +18,6 @@ export const SettingsPage = () => {
   const getTopicsList = async (): Promise<Topic[]> => {
     let topics: Topic[] = await getOptionalTopics();
     if (topics) {
-      console.log("topics", topics);
       setTopicsList(topics);
       return topics;
     }

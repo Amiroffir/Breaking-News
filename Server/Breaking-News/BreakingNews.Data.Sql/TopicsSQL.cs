@@ -12,41 +12,25 @@ using Utilities;
 
 namespace BreakingNews.Data.Sql
 {
-    public class TopicsSQL : BaseSQL
+	public class TopicsSQL : BaseSQL
 	{
 		public TopicsSQL(LogManager logManager) : base(logManager) { }
 
-		public List<Topic> GetTopics()
+		public List<Topic> GetOptionalTopics()
 		{
 			object topics;
 			try
 			{
-				topics = SQLQuery.RunCommandResult("SELECT * FROM Topics", MapDataIntoTopics);
+				topics = SQLQuery.RunCommandResult("SELECT * FROM TopicsIndex", GetTopicsIndex);
 				return (List<Topic>)topics;
 			}
 			catch (Exception ex)
 			{
-				LogManager.LogException("Error in GetTopics: " + ex.Message,ex);
+				LogManager.LogException("Error in GetTopics: " + ex.Message, ex);
 				return null;
-			}				
-		}
-
-
-		private List<Topic> MapDataIntoTopics(SqlDataReader reader)
-		{
-			List<Topic> topicsList = new List<Topic>();
-			
-			while (reader.Read())
-			{
-				
-				Topic topicToAdd = new Topic();
-				Services.Mappers.TopicMapper.Mapper.Map(reader, topicToAdd); 
-				topicsList.Add(topicToAdd);
 			}
-		return topicsList;
 		}
 
-		
 		public List<Topic> GetTopicsBySource(int source)
 		{
 			object topics;
@@ -61,6 +45,36 @@ namespace BreakingNews.Data.Sql
 				return null;
 			}
 
+		}
+
+		private List<Topic> GetTopicsIndex(SqlDataReader reader)
+		{
+			List<Topic> topicsList = new List<Topic>();
+
+			while (reader.Read())
+			{
+				Topic topicToAdd = new Topic();
+				int idIndex = reader.GetOrdinal("id");
+				int nameIndex = reader.GetOrdinal("topicName");
+				topicToAdd.TopicID = reader.GetInt32(idIndex);
+				topicToAdd.TopicName = reader.GetString(nameIndex);
+				topicsList.Add(topicToAdd);
+			}
+			return topicsList;
+		}
+
+
+		private List<Topic> MapDataIntoTopics(SqlDataReader reader)
+		{
+			List<Topic> topicsList = new List<Topic>();
+
+			while (reader.Read())
+			{
+				Topic topicToAdd = new Topic();
+				Services.Mappers.TopicMapper.Mapper.Map(reader, topicToAdd);
+				topicsList.Add(topicToAdd);
+			}
+			return topicsList;
 		}
 	}
 }

@@ -1,5 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useRecoilValue } from "recoil";
+import { ItemsDisplay } from "../../components/compsIndex";
+import { Article } from "../../interfaces/Article.interface";
+import { Topic } from "../../interfaces/Topic.interface";
+import { getTrendingNews } from "../../services/articles.service";
+import { LocalSelectedTopics } from "../../shareStates/selectedTopics.state";
 
 export const TrendingPage = () => {
-  return <div>Trending.page</div>;
+  const selectedTopics: Topic[] = useRecoilValue(LocalSelectedTopics);
+  const [trendingNews, setTrendingNews] = useState<Article[]>([]);
+
+  useEffect(() => {
+    getTrendingNews(selectedTopics).then((res) => {
+      setTrendingNews(res);
+    });
+  }, []);
+
+  return <ItemsDisplay articlesList={trendingNews} />;
 };

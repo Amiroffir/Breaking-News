@@ -11,11 +11,11 @@ namespace BreakingNews.WebApi.Controllers
 	{
 		// GET: api/<ValuesController>
 		[HttpGet("get-topics")]
-		public JsonResult GetTopics()
+		public JsonResult GetOptionalTopics()
 		{
 			try
 			{
-				return new JsonResult(MainManager.Instance.TopicsManager.GetTopics());
+				return new JsonResult(MainManager.Instance.TopicsManager.GetOptionalTopics());
 			}
 			catch (Exception ex)
 			{

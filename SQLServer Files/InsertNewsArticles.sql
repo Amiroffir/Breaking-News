@@ -10,12 +10,27 @@
 --);
 
 -- Stored procedure that will accept a table as a parameter
-CREATE PROCEDURE dbo.InsertNewsArticles
+alter PROCEDURE dbo.InsertNewsArticles
+
 	@NewsArticles dbo.NewsArticle READONLY
+	
     AS
     BEGIN
+ CREATE table #temp (
+ newsSource int,
+ headline nvarchar(500), [desc] nvarchar(500), link nvarchar(500), [image] nvarchar(500), Topic int )
+
+ INSERT INTO #temp (newsSource, headline, [desc], link, [image], Topic)
+ SELECT NewsSource, Headline, [Description], Link, ImgUrl, TopicID FROM @NewsArticles
+
 		INSERT INTO dbo.Articles (newsSource, headline, [desc], link, [image], Topic)
-		SELECT NewsSource, Headline, [Description], Link, ImgUrl, TopicID
-		FROM @NewsArticles
+		SELECT newsSource, headline, [desc], link, [image],Topic
+		FROM #temp WHERE NOT EXISTS (
+		SELECT 1 
+		FROM Articles
+		WHERE Articles.link = #temp.link
+		)
+
+		drop table #temp
 	END
     

@@ -17,10 +17,10 @@ namespace BreakingNews.Entities
 			
 		}
 		
-		public List<Topic> GetTopics()
+		public List<Topic> GetOptionalTopics()
 		{
 			TopicsSQL topicsSQL = new TopicsSQL(LogManager);
-			return topicsSQL.GetTopics();
+			return topicsSQL.GetOptionalTopics();
 		}
 
 		

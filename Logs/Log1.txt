@@ -1107,3 +1107,282 @@ An object or column name is missing or empty. For SELECT INTO statements, verify
 19/03/2023 10:59:04-Event-Maariv Manager initialized-
 19/03/2023 10:59:04-Event-Base entity initialized-
 19/03/2023 10:59:04-Event-NewsFeedHandler initialized-
+19/03/2023 11:26:06-Event-Base entity initialized-
+19/03/2023 11:26:06-Event-Topics Manager initialized-
+19/03/2023 11:26:06-Event-Base entity initialized-
+19/03/2023 11:26:06-Event-Articles Manager initialized-
+19/03/2023 11:26:06-Event-Base entity initialized-
+19/03/2023 11:26:06-Event-NewsFeedHandler initialized-
+19/03/2023 11:26:06-Event-Ynet Manager initialized-
+19/03/2023 11:26:06-Event-Base entity initialized-
+19/03/2023 11:26:06-Event-NewsFeedHandler initialized-
+19/03/2023 11:26:06-Event-Walla Manager initialized-
+19/03/2023 11:26:06-Event-Base entity initialized-
+19/03/2023 11:26:06-Event-NewsFeedHandler initialized-
+19/03/2023 12:27:05-Event-Base entity initialized-
+19/03/2023 12:27:05-Event-Topics Manager initialized-
+19/03/2023 12:27:05-Event-Base entity initialized-
+19/03/2023 12:27:05-Event-Articles Manager initialized-
+19/03/2023 12:27:40-Exception-Procedure or function GetLatestNewsArticlesBySelectedTopics has too many arguments specified.-Procedure or function GetLatestNewsArticlesBySelectedTopics has too many arguments specified.
+19/03/2023 12:28:33-Event-Base entity initialized-
+19/03/2023 12:28:33-Event-Topics Manager initialized-
+19/03/2023 12:28:33-Event-Base entity initialized-
+19/03/2023 12:28:33-Event-Articles Manager initialized-
+19/03/2023 15:22:23-Event-Base entity initialized-
+19/03/2023 15:22:23-Event-Topics Manager initialized-
+19/03/2023 15:22:23-Event-Base entity initialized-
+19/03/2023 15:22:23-Event-Articles Manager initialized-
+19/03/2023 15:22:24-Exception-Error in GetTopics: Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+-Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+
+19/03/2023 15:22:24-Exception-Error in GetTopics: Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+-Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+
+19/03/2023 15:22:25-Exception-Error in GetTopics: Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+-Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+
+19/03/2023 15:22:25-Exception-Error in GetTopics: Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+-Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+
+19/03/2023 15:22:41-Exception-Error in GetTopics: Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+-Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+
+19/03/2023 15:22:41-Exception-Error in GetTopics: Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+-Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+
+19/03/2023 15:22:50-Exception-Error in GetTopics: Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+-Error mapping types.
+
+Mapping types:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Type Map configuration:
+SqlDataReader -> Topic
+System.Data.SqlClient.SqlDataReader -> BreakingMews.Models.Topic
+
+Destination Member:
+TopicID
+
+19/03/2023 15:36:28-Event-Base entity initialized-
+19/03/2023 15:36:28-Event-Topics Manager initialized-
+19/03/2023 15:36:28-Event-Base entity initialized-
+19/03/2023 15:36:28-Event-Articles Manager initialized-
+19/03/2023 15:47:14-Event-Base entity initialized-
+19/03/2023 15:47:14-Event-Topics Manager initialized-
+19/03/2023 15:47:14-Event-Base entity initialized-
+19/03/2023 15:47:14-Event-Articles Manager initialized-
+19/03/2023 15:58:21-Event-Base entity initialized-
+19/03/2023 15:58:21-Event-Topics Manager initialized-
+19/03/2023 15:58:21-Event-Base entity initialized-
+19/03/2023 15:58:21-Event-Articles Manager initialized-
+19/03/2023 16:00:19-Event-Base entity initialized-
+19/03/2023 16:00:19-Event-Topics Manager initialized-
+19/03/2023 16:00:19-Event-Base entity initialized-
+19/03/2023 16:00:19-Event-Articles Manager initialized-
+19/03/2023 16:56:54-Event-Base entity initialized-
+19/03/2023 16:56:54-Event-Topics Manager initialized-
+19/03/2023 16:56:54-Event-Base entity initialized-
+19/03/2023 16:56:54-Event-Articles Manager initialized-
+19/03/2023 17:16:42-Event-Base entity initialized-
+19/03/2023 17:53:17-Event-Base entity initialized-
+19/03/2023 17:53:17-Event-Topics Manager initialized-
+19/03/2023 17:53:17-Event-Base entity initialized-
+19/03/2023 17:53:17-Event-Articles Manager initialized-
+19/03/2023 17:58:19-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:31-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:31-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:35-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:36-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:36-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:36-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:36-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:37-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:37-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:40-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 17:58:40-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 18:28:26-Event-Base entity initialized-
+19/03/2023 18:28:26-Event-Topics Manager initialized-
+19/03/2023 18:28:26-Event-Base entity initialized-
+19/03/2023 18:28:26-Event-Articles Manager initialized-
+19/03/2023 18:28:26-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 18:28:26-Exception-Incorrect syntax near ')'.-Incorrect syntax near ')'.
+19/03/2023 19:09:43-Event-Base entity initialized-
+19/03/2023 19:13:32-Event-Base entity initialized-
+19/03/2023 19:15:18-Event-Base entity initialized-
+19/03/2023 19:20:12-Event-Base entity initialized-
+19/03/2023 19:20:12-Event-Topics Manager initialized-
+19/03/2023 19:22:25-Event-Base entity initialized-
+19/03/2023 19:22:25-Event-Topics Manager initialized-
+19/03/2023 19:22:25-Event-Base entity initialized-
+19/03/2023 19:22:25-Event-Articles Manager initialized-
+19/03/2023 19:22:25-Event-Base entity initialized-
+19/03/2023 19:22:25-Event-NewsFeedHandler initialized-
+19/03/2023 19:22:25-Event-Maariv Manager initialized-
+19/03/2023 19:29:38-Event-Base entity initialized-
+19/03/2023 19:29:38-Event-Topics Manager initialized-
+19/03/2023 19:29:38-Event-Base entity initialized-
+19/03/2023 19:29:38-Event-Articles Manager initialized-
+19/03/2023 19:29:38-Event-Base entity initialized-
+19/03/2023 19:29:38-Event-NewsFeedHandler initialized-
+19/03/2023 19:29:38-Event-Ynet Manager initialized-
+19/03/2023 19:29:38-Event-Base entity initialized-
+19/03/2023 19:29:38-Event-NewsFeedHandler initialized-
+19/03/2023 19:29:38-Event-Walla Manager initialized-
+19/03/2023 19:29:38-Event-Base entity initialized-
+19/03/2023 19:29:38-Event-NewsFeedHandler initialized-
+19/03/2023 19:29:38-Event-Maariv Manager initialized-
+19/03/2023 19:29:38-Event-Base entity initialized-
+19/03/2023 19:29:38-Event-NewsFeedHandler initialized-
+19/03/2023 19:31:18-Event-Base entity initialized-
+19/03/2023 19:31:18-Event-Topics Manager initialized-
+19/03/2023 19:31:18-Event-Base entity initialized-
+19/03/2023 19:31:18-Event-Articles Manager initialized-
+19/03/2023 19:31:18-Event-Base entity initialized-
+19/03/2023 19:31:18-Event-NewsFeedHandler initialized-
+19/03/2023 19:31:18-Event-Ynet Manager initialized-
+19/03/2023 19:31:18-Event-Base entity initialized-
+19/03/2023 19:31:18-Event-NewsFeedHandler initialized-

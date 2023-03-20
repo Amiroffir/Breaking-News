@@ -2,3 +2,13 @@ h5,
 p {
   color: black;
 }
+
+.items-topic-group {
+  border: 3px solid black;
+  border-radius: 5px;
+  max-height: 500px;
+  overflow-y: auto;
+  color: black;
+  width: 30%;
+  word-wrap: break-word;
+}

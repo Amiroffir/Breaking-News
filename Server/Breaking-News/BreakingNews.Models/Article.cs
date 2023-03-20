@@ -2,7 +2,7 @@
 
 namespace BreakingNews.Models
 {
-	public class Article
+	public record Article
 	{
 		public int Id { get; set; }
 		public int TopicID { get; set; }
