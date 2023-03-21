@@ -1,13 +1,4 @@
-﻿using BreakingNews.Data.Sql.Services;
-using BreakingNews.Models;
-using HtmlAgilityPack;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Xml;
+﻿using System.Text.RegularExpressions;
 using Utilities;
 
 namespace BreakingNews.Entities
@@ -22,8 +13,11 @@ namespace BreakingNews.Entities
 	
 		public override string ExtractDescriptionText(string description)
 		{
+			if (description == null || description == string.Empty)
+			{
+				return "";
+			}
 			string descText = description;
-
 			Match match = Regex.Match(descText, @"<p>(.*?)</p>");
 			if (match.Success)
 			{

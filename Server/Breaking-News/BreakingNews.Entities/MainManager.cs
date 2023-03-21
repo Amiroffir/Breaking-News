@@ -1,6 +1,4 @@
 ﻿using BreakingMews.Models;
-using BreakingNews.Models;
-using System.Collections.Generic;
 using Utilities;
 
 namespace BreakingNews.Entities

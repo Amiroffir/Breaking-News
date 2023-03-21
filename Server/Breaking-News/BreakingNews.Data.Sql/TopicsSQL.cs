@@ -1,13 +1,7 @@
-﻿using AutoMapper;
-using BreakingMews.Models;
+﻿using BreakingMews.Models;
 using BreakingNews.DAL;
-using BreakingNews.Data.Sql;
-using System;
-using System.Collections.Generic;
+using BreakingNews.Data.Sql.Services;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Utilities;
 
 namespace BreakingNews.Data.Sql
@@ -18,35 +12,46 @@ namespace BreakingNews.Data.Sql
 
 		public List<Topic> GetOptionalTopics()
 		{
-			object topics;
+			List<Topic> topics = new List<Topic>();
 			try
 			{
-				topics = SQLQuery.RunCommandResult("SELECT * FROM TopicsIndex", GetTopicsIndex);
-				return (List<Topic>)topics;
+				topics = (List<Topic>)SQLQuery.RunCommandResult("SELECT * FROM TopicsIndex", GetTopicsIndex);
+				LogManager.LogEvent("Optional Topics retrieved successfully");
+				return topics;
 			}
 			catch (Exception ex)
 			{
-				LogManager.LogException("Error in GetTopics: " + ex.Message, ex);
-				return null;
+				LogManager.LogException("Error in GetOptionalTopics: " + ex.Message, ex);
+				throw;
 			}
 		}
 
 		public List<Topic> GetTopicsBySource(int source)
 		{
-			object topics;
+			List<Topic> topics = new List<Topic>();
 			try
 			{
-				topics = SQLQuery.RunCommandResult("GetTopicsByNewsSource " + "'" + source + "'", MapDataIntoTopics);
-				return (List<Topic>)topics;
+				topics = (List<Topic>)SQLQuery.RunCommandResult("GetTopicsByNewsSource " + "'" + source + "'", MapDataIntoTopics);
+				LogManager.LogEvent("Topics by sourceID: " + source + " retrieved successfully");
+				return topics;
 			}
 			catch (Exception ex)
 			{
 				LogManager.LogException("Error in GetTopicsBySource: " + ex.Message, ex);
-				return null;
+				throw;
 			}
-
 		}
+		private List<Topic> MapDataIntoTopics(SqlDataReader reader)
+		{
+			List<Topic> topicsList = new List<Topic>();
 
+			while (reader.Read())
+			{
+				Topic topicToAdd = Mappers.TopicMapper.Map(reader);
+				topicsList.Add(topicToAdd);
+			}
+			return topicsList;
+		}
 		private List<Topic> GetTopicsIndex(SqlDataReader reader)
 		{
 			List<Topic> topicsList = new List<Topic>();
@@ -58,20 +63,6 @@ namespace BreakingNews.Data.Sql
 				int nameIndex = reader.GetOrdinal("topicName");
 				topicToAdd.TopicID = reader.GetInt32(idIndex);
 				topicToAdd.TopicName = reader.GetString(nameIndex);
-				topicsList.Add(topicToAdd);
-			}
-			return topicsList;
-		}
-
-
-		private List<Topic> MapDataIntoTopics(SqlDataReader reader)
-		{
-			List<Topic> topicsList = new List<Topic>();
-
-			while (reader.Read())
-			{
-				Topic topicToAdd = new Topic();
-				Services.Mappers.TopicMapper.Mapper.Map(reader, topicToAdd);
 				topicsList.Add(topicToAdd);
 			}
 			return topicsList;

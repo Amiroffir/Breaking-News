@@ -12,7 +12,8 @@ export const NewsFeedPage = () => {
   const [newsItemsByTopics, setNewsItemsByTopics] = useState<Article[][]>([]);
 
   const getSelectedTopics = async (): Promise<Article[][]> => {
-    const res: Article[] = await getSelectedTopicsItems(selectedTopics);
+    const res: Article[] | null = await getSelectedTopicsItems(selectedTopics);
+    if (!res) return [];
     const newsByItems = divideNewsItemsByTopics(res, selectedTopics);
     return newsByItems;
   };

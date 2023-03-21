@@ -1,10 +1,5 @@
 ﻿using BreakingMews.Models;
 using BreakingNews.Data.Sql;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Utilities;
 
 namespace BreakingNews.Entities
@@ -19,15 +14,31 @@ namespace BreakingNews.Entities
 		
 		public List<Topic> GetOptionalTopics()
 		{
-			TopicsSQL topicsSQL = new TopicsSQL(LogManager);
-			return topicsSQL.GetOptionalTopics();
+			try
+			{
+				TopicsSQL topicsSQL = new TopicsSQL(LogManager);
+				return topicsSQL.GetOptionalTopics();
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+				throw;
+			}
 		}
 
 		
 		public List<Topic> GetTopicsBySource(NewsSources source)
 		{
-			TopicsSQL topicsSQL = new TopicsSQL(LogManager);
-			return topicsSQL.GetTopicsBySource((int)source);
+			try
+			{
+				TopicsSQL topicsSQL = new TopicsSQL(LogManager);
+				return topicsSQL.GetTopicsBySource((int)source);
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+				throw;
+			}
 		}
 
 	}

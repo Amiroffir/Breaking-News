@@ -1,16 +1,12 @@
-﻿using BreakingMews.Models;
+﻿
+using BreakingMews.Models;
 using BreakingNews.Data.Sql;
 using BreakingNews.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Utilities;
 
 namespace BreakingNews.Entities
 {
-	public class ArticlesManager:BaseEntity
+	public class ArticlesManager : BaseEntity
 	{
 		public ArticlesManager(LogManager logManager) : base(logManager)
 		{
@@ -19,33 +15,63 @@ namespace BreakingNews.Entities
 
 		public List<Article> GetArticles(List<Topic> selectedTopics)
 		{
-			// Extract the IDs from the selected topics
-			List<int> topicIDS = selectedTopics.Select(t => t.TopicID).ToList();
-			ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
-			return articlesSQL.GetArticles(topicIDS);
-			
+			try
+			{
+				// Extract the IDs from the selected topics
+				List<int> topicIDS = selectedTopics.Select(t => t.TopicID).ToList();
+				ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
+				return articlesSQL.GetArticles(topicIDS);
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+				throw;
+			}
+
 		}
 
 		public List<Article> GetExploreNews(List<Topic> selectedTopics)
 		{
-			// Extract the IDs from the selected topics
-			List<int> topicIDS = selectedTopics.Select(t => t.TopicID).ToList();
-			ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
-			return articlesSQL.GetExploreNews(topicIDS);
+			try
+			{
+				List<int> topicIDS = selectedTopics.Select(t => t.TopicID).ToList();
+				ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
+				return articlesSQL.GetExploreNews(topicIDS);
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+				throw;
+			}
 		}
 
 		public List<Article> GetTrendingNews(List<Topic> selectedTopics)
 		{
-			// Extract the IDs from the selected topics
-			List<int> topicIDS = selectedTopics.Select(t => t.TopicID).ToList();
-			ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
-			return articlesSQL.GetTrendingNews(topicIDS);
+			try
+			{
+				List<int> topicIDS = selectedTopics.Select(t => t.TopicID).ToList();
+				ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
+				return articlesSQL.GetTrendingNews(topicIDS);
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+				throw;
+			}
 		}
 
 		public void UpdatePopularity(int articleID)
 		{
-			ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
-			articlesSQL.UpdatePopularity(articleID);
+			try
+			{
+				ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
+				articlesSQL.UpdatePopularity(articleID);
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+				throw;
+			}
 		}
 	}
 }

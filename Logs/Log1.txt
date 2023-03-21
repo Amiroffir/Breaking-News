@@ -1386,3 +1386,75 @@ TopicID
 19/03/2023 19:31:18-Event-Ynet Manager initialized-
 19/03/2023 19:31:18-Event-Base entity initialized-
 19/03/2023 19:31:18-Event-NewsFeedHandler initialized-
+21/03/2023 10:40:39-Event-Base entity initialized-
+21/03/2023 10:40:39-Event-Topics Manager initialized-
+21/03/2023 10:40:39-Event-Base entity initialized-
+21/03/2023 10:40:39-Event-Articles Manager initialized-
+21/03/2023 10:40:39-Event-BaseSQL initialized-
+21/03/2023 10:40:40-Event-Optional Topics retrieved successfully-
+21/03/2023 10:41:18-Event-BaseSQL initialized-
+21/03/2023 10:41:18-Event-Articles retrieved from DB-
+21/03/2023 10:41:27-Event-BaseSQL initialized-
+21/03/2023 10:41:27-Event-Articles retrieved from DB-
+21/03/2023 10:42:14-Event-Base entity initialized-
+21/03/2023 10:45:27-Event-Base entity initialized-
+21/03/2023 10:45:27-Event-Topics Manager initialized-
+21/03/2023 10:57:54-Event-Base entity initialized-
+21/03/2023 10:57:54-Event-Topics Manager initialized-
+21/03/2023 10:57:54-Event-Base entity initialized-
+21/03/2023 10:57:54-Event-Articles Manager initialized-
+21/03/2023 10:57:54-Event-Base entity initialized-
+21/03/2023 10:57:54-Event-NewsFeedHandler initialized-
+21/03/2023 10:57:54-Event-Ynet Manager initialized-
+21/03/2023 10:57:54-Event-Base entity initialized-
+21/03/2023 10:57:54-Event-NewsFeedHandler initialized-
+21/03/2023 10:57:54-Event-Walla Manager initialized-
+21/03/2023 10:57:54-Event-Base entity initialized-
+21/03/2023 10:57:54-Event-NewsFeedHandler initialized-
+21/03/2023 10:57:54-Event-Maariv Manager initialized-
+21/03/2023 10:57:54-Event-Base entity initialized-
+21/03/2023 10:57:54-Event-NewsFeedHandler initialized-
+21/03/2023 10:57:54-Event-Mako Manager initialized-
+21/03/2023 10:57:54-Event-BaseSQL initialized-
+21/03/2023 10:57:54-Event-BaseSQL initialized-
+21/03/2023 10:57:54-Event-BaseSQL initialized-
+21/03/2023 10:57:54-Event-BaseSQL initialized-
+21/03/2023 10:57:54-Event-BaseSQL initialized-
+21/03/2023 10:57:55-Event-Topics by sourceID: 4 retrieved successfully-
+21/03/2023 10:57:55-Event-Topics by sourceID: 1 retrieved successfully-
+21/03/2023 10:57:55-Event-Topics by sourceID: 2 retrieved successfully-
+21/03/2023 10:57:55-Event-Topics by sourceID: 3 retrieved successfully-
+21/03/2023 10:57:56-Event-BaseSQL initialized-
+21/03/2023 10:57:56-Event-BaseSQL initialized-
+21/03/2023 10:57:56-Event-Optional Topics retrieved successfully-
+21/03/2023 10:57:56-Event-BaseSQL initialized-
+21/03/2023 10:57:56-Event-Optional Topics retrieved successfully-
+21/03/2023 10:57:57-Event-BaseSQL initialized-
+21/03/2023 10:57:57-Event-BaseSQL initialized-
+21/03/2023 10:57:57-Event-Articles updated in DB-
+21/03/2023 10:57:57-Event-BaseSQL initialized-
+21/03/2023 10:57:57-Event-Articles updated in DB-
+21/03/2023 10:57:58-Event-Articles updated in DB-
+21/03/2023 10:57:59-Event-BaseSQL initialized-
+21/03/2023 10:57:59-Event-Optional Topics retrieved successfully-
+21/03/2023 10:57:59-Event-BaseSQL initialized-
+21/03/2023 10:57:59-Event-Optional Topics retrieved successfully-
+21/03/2023 10:58:01-Event-BaseSQL initialized-
+21/03/2023 10:58:02-Event-BaseSQL initialized-
+21/03/2023 10:58:19-Event-Articles retrieved from DB-
+21/03/2023 10:58:19-Event-Articles retrieved from DB-
+21/03/2023 10:58:19-Event-Articles retrieved from DB-
+21/03/2023 10:58:19-Event-Articles retrieved from DB-
+21/03/2023 10:58:20-Event-Articles updated in DB-
+21/03/2023 10:58:46-Event-BaseSQL initialized-
+21/03/2023 10:58:46-Event-BaseSQL initialized-
+21/03/2023 10:58:46-Event-Trending articles retrieved from DB-
+21/03/2023 10:58:46-Event-Trending articles retrieved from DB-
+21/03/2023 10:58:54-Event-BaseSQL initialized-
+21/03/2023 10:58:54-Event-BaseSQL initialized-
+21/03/2023 10:58:54-Event-Explore articles retrieved from DB-
+21/03/2023 10:58:54-Event-Explore articles retrieved from DB-
+21/03/2023 10:58:58-Event-BaseSQL initialized-
+21/03/2023 10:58:58-Event-BaseSQL initialized-
+21/03/2023 10:58:58-Event-Articles retrieved from DB-
+21/03/2023 10:58:58-Event-Articles retrieved from DB-

@@ -12,7 +12,11 @@ export const TrendingPage = () => {
 
   useEffect(() => {
     getTrendingNews(selectedTopics).then((res) => {
-      setTrendingNews(res);
+      if (res) {
+        setTrendingNews(res);
+      } else {
+        setTrendingNews([]);
+      }
     });
   }, []);
 

@@ -5,22 +5,37 @@ import { Topic } from "../interfaces/Topic.interface";
 
 export const updatePopularityInDB = async (
   articleID: number
-): Promise<void> => {
-  await axios.put(`${apiUrl}/news-feed/update-popularity/${articleID}`);
+): Promise<void | null> => {
+  try {
+    await axios.put(`${apiUrl}/news-feed/update-popularity/${articleID}`);
+  } catch (error: any) {
+    console.log(error);
+    return null;
+  }
 };
 
 export const getTrendingNews = async (
   selectedTopics: Topic[]
-): Promise<Article[]> => {
-  const response = await axios.post(`${apiUrl}/trending/get`, selectedTopics);
-  console.log("response", response.data);
-  return response.data;
+): Promise<Article[] | null> => {
+  try {
+    const response = await axios.post(`${apiUrl}/trending/get`, selectedTopics);
+    console.log("response", response.data);
+    return response.data;
+  } catch (error: any) {
+    console.log(error);
+    return null;
+  }
 };
 
 export const getExploreNews = async (
   selectedTopics: Topic[]
-): Promise<Article[]> => {
-  const response = await axios.post(`${apiUrl}/explore/get`, selectedTopics);
-  console.log("response", response.data);
-  return response.data;
+): Promise<Article[] | null> => {
+  try {
+    const response = await axios.post(`${apiUrl}/explore/get`, selectedTopics);
+    console.log("response", response.data);
+    return response.data;
+  } catch (error: any) {
+    console.log(error);
+    return null;
+  }
 };

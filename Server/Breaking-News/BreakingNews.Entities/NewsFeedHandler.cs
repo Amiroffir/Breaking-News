@@ -2,7 +2,6 @@
 using BreakingNews.Data.Sql;
 using BreakingNews.Data.Sql.Services;
 using BreakingNews.Models;
-using System.Data;
 using System.Text.RegularExpressions;
 using System.Xml;
 using Utilities;
@@ -25,7 +24,7 @@ namespace BreakingNews.Entities
 		{
 			while (true)
 			{
-				
+
 				List<List<Article>> articlesToDB = await GetAllRSSFeeds(Source);
 				InsertArticlesToDB(articlesToDB);
 				Thread.Sleep(3600000); // Thread sleeps for 1 hour
@@ -37,7 +36,7 @@ namespace BreakingNews.Entities
 		/// </summary>
 		public async Task<List<List<Article>>> GetAllRSSFeeds(NewsSources src)
 		{
-			
+
 			var parallelTasks = new List<Task<List<Article>>>(); // list of tasks to be executed in parallel
 			List<Topic> topicsBySource = MainManager.Instance.TopicsManager.GetTopicsBySource(src).ToList(); // get all topics for the source
 
@@ -47,7 +46,6 @@ namespace BreakingNews.Entities
 			}
 
 			var results = await Task.WhenAll(parallelTasks);
-
 			return results.ToList();
 		}
 
@@ -65,17 +63,17 @@ namespace BreakingNews.Entities
 					{
 						List<Article> articlesByTopic;
 						XmlDocument xmlDoc = new XmlDocument();
-						
+
 						xmlDoc.LoadXml(await response.Content.ReadAsStringAsync());
 						articlesByTopic = XmlDocHandler(xmlDoc, MaxArticlesItems, topic.TopicID, (int)Source);
-						
+
 						return articlesByTopic;
 					}
 					else
 					{
 						Exception ex = new Exception();
 						LogManager.LogException("Error - " + response.StatusCode, ex);
-						throw ex;
+						return null;
 					}
 				}
 			}
@@ -102,11 +100,9 @@ namespace BreakingNews.Entities
 			// loop through the item nodes and extract them into Article properties with AutoMapper
 			foreach (XmlNode item in itemNodes)
 			{
-				Article mappedArticle = new Article();
-
 				// Map the XmlNode to an Article object
-				mappedArticle = Mappers.ArticleMapper.Mapper.Map(item, mappedArticle);
-
+				Article mappedArticle = Mappers.ArticleMapper.Map(item);
+					
 				// Additional custom mapping
 				mappedArticle.ImgUrl = ExtractImage(mappedArticle.ImgUrl);
 				mappedArticle.Description = ExtractDescriptionText(mappedArticle.Description);
@@ -126,7 +122,6 @@ namespace BreakingNews.Entities
 
 		public virtual string ExtractImage(string Node)
 		{
-
 			if (Node != null)
 			{
 				string description = Node;
@@ -137,31 +132,23 @@ namespace BreakingNews.Entities
 					return match.Groups[1].Value;
 				}
 			}
-			return null;
+			return "";
 		}
 
 		public abstract string ExtractDescriptionText(string description);
-		//public virtual string ExtractDescriptionText(string description)
-		//{
-		//	string descText = description;
-		//	Match match = Regex.Match(descText, @"<div>(.*?)</div>");
-		//	if (match.Success)
-		//	{
-		//		string stringToRemove = match.Groups[0].Value;
-		//		int index = descText.IndexOf(stringToRemove);
-		//		descText = descText.Remove(index, stringToRemove.Length);
-		//		return descText;
-		//	}
-		//	else
-		//	{
-		//		return null;
-		//	}
-		//}
 
 		private void InsertArticlesToDB(List<List<Article>> articlesToDB)
 		{
-			ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
-			articlesSQL.InsertArticles(articlesToDB);
+			try
+			{
+				ArticlesSQL articlesSQL = new ArticlesSQL(LogManager);
+				articlesSQL.InsertArticles(articlesToDB);
+			}
+
+			catch (Exception ex)
+			{
+				LogManager.LogException(ex.Message, ex);
+			}
 		}
 
 	}

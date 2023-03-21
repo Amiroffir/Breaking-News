@@ -13,6 +13,11 @@ namespace BreakingNews.Entities
 
 		public override string ExtractDescriptionText(string description)
 		{
+			if (description == null || description == string.Empty)
+			{
+				return "";
+			}
+			
 			HtmlDocument doc = new HtmlDocument();
 			doc.LoadHtml(description);
 			string innerText = doc.DocumentNode.SelectSingleNode("//p").InnerText;

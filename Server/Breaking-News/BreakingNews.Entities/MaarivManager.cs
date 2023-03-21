@@ -1,13 +1,4 @@
-﻿using BreakingNews.Data.Sql.Services;
-using BreakingNews.Models;
-using HtmlAgilityPack;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Xml;
+﻿using HtmlAgilityPack;
 using Utilities;
 
 namespace BreakingNews.Entities
@@ -22,7 +13,10 @@ namespace BreakingNews.Entities
 
 		public override string ExtractDescriptionText(string description)
 		{
-			string descText = description;
+			if (description == null || description == string.Empty)
+			{
+				return "";
+			}
 			HtmlDocument doc = new HtmlDocument();
 			doc.LoadHtml(description);
 			return doc.DocumentNode.InnerText.Trim();

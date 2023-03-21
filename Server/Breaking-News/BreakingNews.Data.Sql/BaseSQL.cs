@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Utilities;
+﻿using Utilities;
 
 namespace BreakingNews.Data.Sql
 {
@@ -12,6 +7,7 @@ namespace BreakingNews.Data.Sql
 		public BaseSQL(LogManager logManager)
 		{
 			LogManager = logManager;
+			LogManager.LogEvent("BaseSQL initialized");
 		}
 		public LogManager LogManager;
 	}

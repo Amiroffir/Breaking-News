@@ -1,5 +1,4 @@
-﻿using System.Xml;
-using Utilities;
+﻿using Utilities;
 
 namespace BreakingNews.Entities
 {

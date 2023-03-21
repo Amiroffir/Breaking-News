@@ -14,44 +14,14 @@ namespace BreakingNews.Entities
 			LogManager.LogEvent("Ynet Manager initialized");
 			Task.Run(GetLatestNewsAsync);
 		}
-
-		//public override List<Article> XmlDocHandler(XmlDocument xmlDoc, int maxArticles,int topicID)
-		//{
-		//	if (xmlDoc == null)
-		//	{
-		//		return null;
-		//	}
-			
-		//	List<Article> mappedArticles = new List<Article>();
-		//	XmlNodeList itemNodes = xmlDoc.SelectNodes("//item");
-			
-		//	// loop through the item nodes and extract them into Article properties with AutoMapper
-		//	foreach (XmlNode item in itemNodes)
-		//	{
-		//		Article mappedArticle = new Article();
-
-		//		// Map the XmlNode to an Article object
-		//		mappedArticle = Mappers.ArticleMapper.Mapper.Map(item, mappedArticle);
-
-		//		// Additional custom mapping
-		//		mappedArticle.ImgUrl = ExtractImage(mappedArticle.ImgUrl);
-		//		mappedArticle.Description = ExtractDescriptionText(mappedArticle.Description);
-		//		mappedArticle.NewsSource = (int)NewsSources.Ynet;
-		//		mappedArticle.TopicID = topicID;
-
-		//		// Add the article to the list
-		//		mappedArticles.Add(mappedArticle);
-
-		//		if (mappedArticles.Count() == 10)
-		//		{
-		//			break; 
-		//		}
-		//	}		
-		//	return mappedArticles;
-		//}
 		
 		public override string ExtractDescriptionText(string description)
 		{
+			if (description == null || description == string.Empty)
+			{
+				return "";
+			}
+			
 			string descText = description;
 			Match match = Regex.Match(descText, @"<div>(.*?)</div>");
 			if (match.Success)
@@ -63,7 +33,7 @@ namespace BreakingNews.Entities
 			}
 			else
 			{
-				return null;
+				return "";
 			}
 		}
 	}

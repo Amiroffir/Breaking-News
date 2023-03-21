@@ -12,7 +12,11 @@ export const ExplorePage = () => {
 
   useEffect(() => {
     getExploreNews(selectedTopics).then((res) => {
-      setExploreNews(res);
+      if (res) {
+        setExploreNews(res);
+      } else {
+        setExploreNews([]);
+      }
     });
   }, []);
   return <ItemsDisplay articlesList={exploreNews} />;
