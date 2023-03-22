@@ -19,15 +19,22 @@ namespace BreakingNews.Entities
 		const int MaxArticlesItems = 10; // max articles to be retrieved from each topic
 		private NewsSources Source;
 
-
 		public async Task GetLatestNewsAsync()
 		{
 			while (true)
 			{
+				try
+				{
+					List<List<Article>> articlesToDB = await GetAllRSSFeeds(Source);
+					InsertArticlesToDB(articlesToDB);
+					Thread.Sleep(3600000); // Thread sleeps for 1 hour
+				}
 
-				List<List<Article>> articlesToDB = await GetAllRSSFeeds(Source);
-				InsertArticlesToDB(articlesToDB);
-				Thread.Sleep(3600000); // Thread sleeps for 1 hour
+				catch (Exception ex)
+				{
+					LogManager.LogException(ex.Message, ex);
+				}
+
 			}
 		}
 
@@ -36,17 +43,24 @@ namespace BreakingNews.Entities
 		/// </summary>
 		public async Task<List<List<Article>>> GetAllRSSFeeds(NewsSources src)
 		{
-
-			var parallelTasks = new List<Task<List<Article>>>(); // list of tasks to be executed in parallel
-			List<Topic> topicsBySource = MainManager.Instance.TopicsManager.GetTopicsBySource(src).ToList(); // get all topics for the source
-
-			foreach (Topic topic in topicsBySource)
+			try
 			{
-				parallelTasks.Add(GetRSSFeed(topic));
-			}
+				var parallelTasks = new List<Task<List<Article>>>(); // list of tasks to be executed in parallel
+				List<Topic> topicsBySource = MainManager.Instance.TopicsManager.GetTopicsBySource(src).ToList(); // get all topics for the source
 
-			var results = await Task.WhenAll(parallelTasks);
-			return results.ToList();
+				foreach (Topic topic in topicsBySource)
+				{
+					parallelTasks.Add(GetRSSFeed(topic));
+				}
+
+				var results = await Task.WhenAll(parallelTasks);
+				return results.ToList();
+			}
+			catch (Exception ex)
+			{
+				LogManager.LogException("Error in GetAllRSSFeeds: " + ex.Message, ex);
+				return null;
+			}
 		}
 
 		/// <summary>
@@ -102,7 +116,7 @@ namespace BreakingNews.Entities
 			{
 				// Map the XmlNode to an Article object
 				Article mappedArticle = Mappers.ArticleMapper.Map(item);
-					
+
 				// Additional custom mapping
 				mappedArticle.ImgUrl = ExtractImage(mappedArticle.ImgUrl);
 				mappedArticle.Description = ExtractDescriptionText(mappedArticle.Description);
@@ -150,6 +164,5 @@ namespace BreakingNews.Entities
 				LogManager.LogException(ex.Message, ex);
 			}
 		}
-
 	}
 }

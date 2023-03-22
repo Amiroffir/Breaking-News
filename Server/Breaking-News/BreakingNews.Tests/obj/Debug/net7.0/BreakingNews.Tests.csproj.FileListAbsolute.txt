@@ -127,3 +127,5 @@ C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-N
 C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Tests\obj\Debug\net7.0\BreakingNews.Tests.genruntimeconfig.cache
 C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Tests\obj\Debug\net7.0\ref\BreakingNews.Tests.dll
 C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Tests\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Tests\bin\Debug\net7.0\BreakingNews.Tests.dll.config
+C:\Users\Amir Offir\VSC-workspace\Zionet General\Breaking-News\Server\Breaking-News\BreakingNews.Tests\bin\Debug\net7.0\HtmlAgilityPack.dll

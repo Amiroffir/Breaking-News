@@ -96,7 +96,7 @@ namespace BreakingNews.Data.Sql
 		private object MapDataIntoArticles(SqlDataReader reader)
 		{
 			List<Article> articlesList = new List<Article>();
-			
+
 			while (reader.Read())
 			{
 				Article articleToAdd = Mappers.ArticleMapper.Map(reader);

@@ -10,7 +10,7 @@ namespace BreakingNews.Entities
 			LogManager.LogEvent("Mako Manager initialized");
 			Task.Run(GetLatestNewsAsync);
 		}
-	
+
 		public override string ExtractDescriptionText(string description)
 		{
 			if (description == null || description == string.Empty)

@@ -1,6 +1,4 @@
-﻿using System.Xml;
-
-namespace BreakingNews.Models
+﻿namespace BreakingNews.Models
 {
 	public record Article
 	{

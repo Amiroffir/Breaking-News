@@ -10,18 +10,17 @@ namespace BreakingNews.Entities
 	{
 		public YnetManager(LogManager logManager) : base(logManager, NewsSources.Ynet)
 		{
-	
 			LogManager.LogEvent("Ynet Manager initialized");
 			Task.Run(GetLatestNewsAsync);
 		}
-		
+
 		public override string ExtractDescriptionText(string description)
 		{
 			if (description == null || description == string.Empty)
 			{
 				return "";
 			}
-			
+
 			string descText = description;
 			Match match = Regex.Match(descText, @"<div>(.*?)</div>");
 			if (match.Success)

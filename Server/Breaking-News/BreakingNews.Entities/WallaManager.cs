@@ -17,7 +17,7 @@ namespace BreakingNews.Entities
 			{
 				return "";
 			}
-			
+
 			HtmlDocument doc = new HtmlDocument();
 			doc.LoadHtml(description);
 			string innerText = doc.DocumentNode.SelectSingleNode("//p").InnerText;

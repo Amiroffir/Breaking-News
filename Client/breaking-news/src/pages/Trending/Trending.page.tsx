@@ -5,6 +5,7 @@ import { Article } from "../../interfaces/Article.interface";
 import { Topic } from "../../interfaces/Topic.interface";
 import { getTrendingNews } from "../../services/articles.service";
 import { LocalSelectedTopics } from "../../shareStates/selectedTopics.state";
+import "./trending.scss";
 
 export const TrendingPage = () => {
   const selectedTopics: Topic[] = useRecoilValue(LocalSelectedTopics);
@@ -20,5 +21,13 @@ export const TrendingPage = () => {
     });
   }, []);
 
-  return <ItemsDisplay articlesList={trendingNews} />;
+  return (
+    <div className="trending">
+      {trendingNews.length > 0 ? (
+        <ItemsDisplay articlesList={trendingNews} />
+      ) : (
+        <div className="no-news">No particular popular news yet</div>
+      )}
+    </div>
+  );
 };

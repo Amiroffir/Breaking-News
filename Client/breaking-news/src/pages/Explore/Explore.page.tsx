@@ -5,6 +5,7 @@ import { Article } from "../../interfaces/Article.interface";
 import { Topic } from "../../interfaces/Topic.interface";
 import { getExploreNews } from "../../services/articles.service";
 import { LocalSelectedTopics } from "../../shareStates/selectedTopics.state";
+import "./explore.scss";
 
 export const ExplorePage = () => {
   const selectedTopics: Topic[] = useRecoilValue(LocalSelectedTopics);
@@ -19,5 +20,9 @@ export const ExplorePage = () => {
       }
     });
   }, []);
-  return <ItemsDisplay articlesList={exploreNews} />;
+  return (
+    <div className="explore">
+      <ItemsDisplay articlesList={exploreNews} />{" "}
+    </div>
+  );
 };

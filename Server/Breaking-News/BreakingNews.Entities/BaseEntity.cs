@@ -8,7 +8,7 @@ namespace BreakingNews.Entities
 		{
 			LogManager = logManager;
 			LogManager.LogEvent("Base entity initialized");
-			
+
 		}
 		public LogManager LogManager;
 

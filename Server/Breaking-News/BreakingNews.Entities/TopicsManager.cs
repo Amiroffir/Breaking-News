@@ -9,9 +9,8 @@ namespace BreakingNews.Entities
 		public TopicsManager(LogManager logManager) : base(logManager)
 		{
 			LogManager.LogEvent("Topics Manager initialized");
-			
 		}
-		
+
 		public List<Topic> GetOptionalTopics()
 		{
 			try
@@ -26,7 +25,6 @@ namespace BreakingNews.Entities
 			}
 		}
 
-		
 		public List<Topic> GetTopicsBySource(NewsSources source)
 		{
 			try
@@ -40,6 +38,5 @@ namespace BreakingNews.Entities
 				throw;
 			}
 		}
-
 	}
 }

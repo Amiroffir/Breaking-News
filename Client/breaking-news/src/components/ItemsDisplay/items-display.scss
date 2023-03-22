@@ -9,6 +9,54 @@ p {
   max-height: 500px;
   overflow-y: auto;
   color: black;
-  width: 30%;
+  width: 90%;
   word-wrap: break-word;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 30%;
+  margin-bottom: 1.3rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+  height: fit-content;
+
+  .item-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .item-content {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .item-img {
+    margin-bottom: 1rem;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .item-link {
+    text-align: right;
+
+    a {
+      font-size: 1.2rem;
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
 }

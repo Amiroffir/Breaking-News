@@ -25,7 +25,6 @@ export const getSelectedTopicsItems = async (
       `${apiUrl}/news-feed/get`,
       selectedTopics
     );
-    console.log("response", response);
     return response.data;
   } catch (error: any) {
     console.log(error);

@@ -6,9 +6,12 @@ namespace BreakingNews.DAL
 {
 	public class SQLQuery
 	{
+		public static string GetConnectionString()
+		{
+			return new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).AddJsonFile("appSettings.json", optional: true, reloadOnChange: true).Build().GetConnectionString("DefaultConnection");
+		}
 
-		//public static string connectionString = //GetConnectionString();
-		public static string connectionString = "Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=BreakingNews;Data Source=localhost\\SQLEXPRESS";
+		public static string connectionString = GetConnectionString();
 		public delegate void SetDataReader_dg(SqlDataReader reader);
 		public delegate object SetResultDataReader_dg(SqlDataReader reader);
 
@@ -142,15 +145,5 @@ namespace BreakingNews.DAL
 				}
 			}
 		}
-
-
-		//public static string GetConnectionString()
-		//{
-		//	var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
-		//	return config.GetConnectionString("DefaultConnection");
-		//}
-
-
-
 	}
 }

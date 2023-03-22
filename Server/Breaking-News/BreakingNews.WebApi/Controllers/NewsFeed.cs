@@ -1,12 +1,6 @@
 ﻿using BreakingMews.Models;
 using BreakingNews.Entities;
-using BreakingNews.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using Newtonsoft.Json.Linq;
-using System.Collections.Generic;
-using System.Runtime.InteropServices.JavaScript;
-using System.Text.Json;
 
 namespace BreakingNews.WebApi.Controllers
 {
@@ -43,8 +37,5 @@ namespace BreakingNews.WebApi.Controllers
 				return new JsonResult(ex.Message);
 			}
 		}
-
-
-
 	}
 }
