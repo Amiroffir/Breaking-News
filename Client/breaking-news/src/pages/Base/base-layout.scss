@@ -25,18 +25,24 @@
       align-items: center;
     }
   }
-  // I
+
   .content-footer-wrapper {
     min-height: calc(100% - #{$header-height});
     overflow: auto;
     .content-wrapper {
       min-height: calc(100% - #{$footer-height});
-      background-color: gray;
-      color: white;
+      background-color: aliceblue;
     }
     .footer-wrapper {
+      display: flex;
+      flex-direction: column;
       height: $footer-height;
       background-color: $color-secondary;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      .footer-text {
+      }
     }
   }
 }

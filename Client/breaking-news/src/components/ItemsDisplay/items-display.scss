@@ -4,7 +4,7 @@ p {
 }
 
 .items-topic-group {
-  border: 3px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
   max-height: 500px;
   overflow-y: auto;
@@ -14,7 +14,10 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+.card {
+  padding: 5px;
+  margin: 7px;
+}
 .item {
   width: 30%;
   margin-bottom: 1.3rem;
@@ -42,6 +45,7 @@ p {
 
     img {
       max-width: 100%;
+      max-height: 13rem;
     }
   }
 

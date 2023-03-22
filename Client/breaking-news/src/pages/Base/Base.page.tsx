@@ -29,7 +29,9 @@ export const BasePage = () => {
             <Route path="/settings" element={<SettingsPage />} />
           </Routes>
         </div>
-        <div className="footer-wrapper">Footer</div>
+        <div className="footer-wrapper">
+          <span className="footer-text">BreakingNews@AmirOffir</span>
+        </div>
       </div>
     </div>
   );
