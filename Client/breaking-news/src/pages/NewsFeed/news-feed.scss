@@ -3,3 +3,13 @@
 .news-feed {
   @extend .page-wrapper;
 }
+
+.items-by-topic-with-hl {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.8rem;
+  gap: 0.3rem;
+}

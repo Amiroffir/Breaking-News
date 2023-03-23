@@ -1,18 +1,9 @@
 import { Article } from "../../interfaces/Article.interface";
 import { updatePopularityInDB } from "../../services/articles.service";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./items-display.scss";
 import "../../flex.scss";
-
-var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-};
 
 interface ItemsDisplayProps {
   articlesList: Article[] | null;

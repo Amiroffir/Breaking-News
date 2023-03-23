@@ -199,3 +199,216 @@
 22/03/2023 18:51:18-Event-Optional Topics retrieved successfully-
 22/03/2023 18:51:18-Event-BaseSQL initialized-
 22/03/2023 18:51:18-Event-Optional Topics retrieved successfully-
+23/03/2023 10:37:56-Event-Base entity initialized-
+23/03/2023 10:37:56-Event-Topics Manager initialized-
+23/03/2023 10:37:56-Event-Base entity initialized-
+23/03/2023 10:37:56-Event-Articles Manager initialized-
+23/03/2023 10:37:56-Event-Base entity initialized-
+23/03/2023 10:37:56-Event-NewsFeedHandler initialized-
+23/03/2023 10:37:56-Event-Ynet Manager initialized-
+23/03/2023 10:37:56-Event-Base entity initialized-
+23/03/2023 10:37:56-Event-NewsFeedHandler initialized-
+23/03/2023 10:37:56-Event-Walla Manager initialized-
+23/03/2023 10:37:56-Event-Base entity initialized-
+23/03/2023 10:37:56-Event-NewsFeedHandler initialized-
+23/03/2023 10:37:56-Event-Maariv Manager initialized-
+23/03/2023 10:37:56-Event-Base entity initialized-
+23/03/2023 10:37:56-Event-NewsFeedHandler initialized-
+23/03/2023 10:37:56-Event-Mako Manager initialized-
+23/03/2023 10:37:56-Event-BaseSQL initialized-
+23/03/2023 10:37:56-Event-BaseSQL initialized-
+23/03/2023 10:37:56-Event-BaseSQL initialized-
+23/03/2023 10:37:56-Event-BaseSQL initialized-
+23/03/2023 10:37:56-Event-BaseSQL initialized-
+23/03/2023 10:37:56-Event-Optional Topics retrieved successfully-
+23/03/2023 10:37:56-Event-BaseSQL initialized-
+23/03/2023 10:37:56-Event-Optional Topics retrieved successfully-
+23/03/2023 10:37:56-Event-Topics by sourceID: 1 retrieved successfully-
+23/03/2023 10:37:56-Event-Topics by sourceID: 2 retrieved successfully-
+23/03/2023 10:37:56-Event-Topics by sourceID: 3 retrieved successfully-
+23/03/2023 10:37:58-Event-BaseSQL initialized-
+23/03/2023 10:37:59-Event-BaseSQL initialized-
+23/03/2023 10:37:59-Event-Articles retrieved from DB-
+23/03/2023 10:37:59-Event-Articles retrieved from DB-
+23/03/2023 10:37:59-Event-Articles updated in DB-
+23/03/2023 10:38:00-Event-BaseSQL initialized-
+23/03/2023 10:38:01-Event-BaseSQL initialized-
+23/03/2023 10:38:01-Event-Articles updated in DB-
+23/03/2023 10:38:01-Event-Articles updated in DB-
+23/03/2023 10:38:28-Event-BaseSQL initialized-
+23/03/2023 10:38:28-Event-Articles updated in DB-
+23/03/2023 10:46:56-Event-BaseSQL initialized-
+23/03/2023 10:46:56-Event-Articles retrieved from DB-
+23/03/2023 10:46:56-Event-Articles retrieved from DB-
+23/03/2023 10:49:05-Event-BaseSQL initialized-
+23/03/2023 10:49:05-Event-Articles retrieved from DB-
+23/03/2023 10:49:19-Event-BaseSQL initialized-
+23/03/2023 10:49:19-Event-Articles retrieved from DB-
+23/03/2023 10:49:43-Event-BaseSQL initialized-
+23/03/2023 10:49:43-Event-Articles retrieved from DB-
+23/03/2023 10:50:36-Event-BaseSQL initialized-
+23/03/2023 10:50:36-Event-Articles retrieved from DB-
+23/03/2023 10:50:39-Event-BaseSQL initialized-
+23/03/2023 10:50:39-Event-Articles retrieved from DB-
+23/03/2023 10:51:41-Event-BaseSQL initialized-
+23/03/2023 10:51:41-Event-Articles retrieved from DB-
+23/03/2023 10:51:45-Event-BaseSQL initialized-
+23/03/2023 10:51:45-Event-BaseSQL initialized-
+23/03/2023 10:51:45-Event-Articles retrieved from DB-
+23/03/2023 10:51:45-Event-Articles retrieved from DB-
+23/03/2023 10:52:16-Event-BaseSQL initialized-
+23/03/2023 10:52:16-Event-Articles retrieved from DB-
+23/03/2023 10:52:20-Event-BaseSQL initialized-
+23/03/2023 10:52:20-Event-BaseSQL initialized-
+23/03/2023 10:52:21-Event-Articles retrieved from DB-
+23/03/2023 10:52:58-Event-BaseSQL initialized-
+23/03/2023 10:52:58-Event-Articles retrieved from DB-
+23/03/2023 10:53:08-Event-BaseSQL initialized-
+23/03/2023 10:53:08-Event-Articles retrieved from DB-
+23/03/2023 10:53:14-Event-BaseSQL initialized-
+23/03/2023 10:53:14-Event-BaseSQL initialized-
+23/03/2023 10:53:14-Event-Articles retrieved from DB-
+23/03/2023 10:53:14-Event-Articles retrieved from DB-
+23/03/2023 10:53:31-Event-BaseSQL initialized-
+23/03/2023 10:53:31-Event-Articles retrieved from DB-
+23/03/2023 10:54:10-Event-BaseSQL initialized-
+23/03/2023 10:54:10-Event-Articles retrieved from DB-
+23/03/2023 10:54:33-Event-BaseSQL initialized-
+23/03/2023 10:54:33-Event-BaseSQL initialized-
+23/03/2023 10:54:33-Event-Articles retrieved from DB-
+23/03/2023 10:54:33-Event-Articles retrieved from DB-
+23/03/2023 10:55:07-Event-BaseSQL initialized-
+23/03/2023 10:55:07-Event-Articles retrieved from DB-
+23/03/2023 10:55:13-Event-BaseSQL initialized-
+23/03/2023 10:55:13-Event-Articles retrieved from DB-
+23/03/2023 10:56:39-Event-BaseSQL initialized-
+23/03/2023 10:56:39-Event-Articles retrieved from DB-
+23/03/2023 10:57:46-Event-BaseSQL initialized-
+23/03/2023 10:57:46-Event-Articles retrieved from DB-
+23/03/2023 10:57:50-Event-BaseSQL initialized-
+23/03/2023 10:57:50-Event-BaseSQL initialized-
+23/03/2023 10:57:50-Event-Articles retrieved from DB-
+23/03/2023 10:57:50-Event-Articles retrieved from DB-
+23/03/2023 10:57:54-Event-BaseSQL initialized-
+23/03/2023 10:57:54-Event-BaseSQL initialized-
+23/03/2023 10:57:54-Event-Articles retrieved from DB-
+23/03/2023 10:57:54-Event-Articles retrieved from DB-
+23/03/2023 11:00:53-Event-BaseSQL initialized-
+23/03/2023 11:00:53-Event-Articles retrieved from DB-
+23/03/2023 11:02:13-Event-BaseSQL initialized-
+23/03/2023 11:02:13-Event-Articles retrieved from DB-
+23/03/2023 11:03:48-Event-BaseSQL initialized-
+23/03/2023 11:03:48-Event-BaseSQL initialized-
+23/03/2023 11:03:48-Event-Articles retrieved from DB-
+23/03/2023 11:03:48-Event-Articles retrieved from DB-
+23/03/2023 11:03:56-Event-BaseSQL initialized-
+23/03/2023 11:03:56-Event-BaseSQL initialized-
+23/03/2023 11:03:56-Event-Articles retrieved from DB-
+23/03/2023 11:03:56-Event-Articles retrieved from DB-
+23/03/2023 11:04:16-Event-BaseSQL initialized-
+23/03/2023 11:04:16-Event-Articles retrieved from DB-
+23/03/2023 11:04:29-Event-BaseSQL initialized-
+23/03/2023 11:04:29-Event-BaseSQL initialized-
+23/03/2023 11:04:29-Event-Articles retrieved from DB-
+23/03/2023 11:04:29-Event-Articles retrieved from DB-
+23/03/2023 11:06:00-Event-BaseSQL initialized-
+23/03/2023 11:06:00-Event-Articles retrieved from DB-
+23/03/2023 11:09:35-Event-BaseSQL initialized-
+23/03/2023 11:09:35-Event-Optional Topics retrieved successfully-
+23/03/2023 11:09:35-Event-BaseSQL initialized-
+23/03/2023 11:09:35-Event-Optional Topics retrieved successfully-
+23/03/2023 11:09:40-Event-BaseSQL initialized-
+23/03/2023 11:09:40-Event-Optional Topics retrieved successfully-
+23/03/2023 11:09:40-Event-BaseSQL initialized-
+23/03/2023 11:09:40-Event-Optional Topics retrieved successfully-
+23/03/2023 11:09:44-Event-BaseSQL initialized-
+23/03/2023 11:09:44-Event-BaseSQL initialized-
+23/03/2023 11:09:44-Event-Articles retrieved from DB-
+23/03/2023 11:09:44-Event-Articles retrieved from DB-
+23/03/2023 11:11:28-Event-BaseSQL initialized-
+23/03/2023 11:11:28-Event-Trending articles retrieved from DB-
+23/03/2023 11:11:28-Event-Trending articles retrieved from DB-
+23/03/2023 11:11:37-Event-BaseSQL initialized-
+23/03/2023 11:11:37-Event-BaseSQL initialized-
+23/03/2023 11:11:37-Event-Explore articles retrieved from DB-
+23/03/2023 11:11:50-Event-BaseSQL initialized-
+23/03/2023 11:11:50-Event-Optional Topics retrieved successfully-
+23/03/2023 11:11:50-Event-BaseSQL initialized-
+23/03/2023 11:11:50-Event-Optional Topics retrieved successfully-
+23/03/2023 11:11:53-Event-BaseSQL initialized-
+23/03/2023 11:11:53-Event-BaseSQL initialized-
+23/03/2023 11:11:53-Event-Articles retrieved from DB-
+23/03/2023 11:11:53-Event-Articles retrieved from DB-
+23/03/2023 11:12:44-Event-BaseSQL initialized-
+23/03/2023 11:12:44-Event-Optional Topics retrieved successfully-
+23/03/2023 11:12:44-Event-BaseSQL initialized-
+23/03/2023 11:12:44-Event-Optional Topics retrieved successfully-
+23/03/2023 11:12:45-Event-BaseSQL initialized-
+23/03/2023 11:12:45-Event-Explore articles retrieved from DB-
+23/03/2023 11:12:45-Event-Explore articles retrieved from DB-
+23/03/2023 11:12:45-Event-BaseSQL initialized-
+23/03/2023 11:12:45-Event-BaseSQL initialized-
+23/03/2023 11:12:45-Event-Trending articles retrieved from DB-
+23/03/2023 11:12:45-Event-Trending articles retrieved from DB-
+23/03/2023 11:12:46-Event-BaseSQL initialized-
+23/03/2023 11:12:46-Event-Articles retrieved from DB-
+23/03/2023 11:12:46-Event-Articles retrieved from DB-
+23/03/2023 11:12:48-Event-BaseSQL initialized-
+23/03/2023 11:12:48-Event-BaseSQL initialized-
+23/03/2023 11:12:48-Event-Trending articles retrieved from DB-
+23/03/2023 11:12:48-Event-Trending articles retrieved from DB-
+23/03/2023 11:12:48-Event-BaseSQL initialized-
+23/03/2023 11:12:48-Event-BaseSQL initialized-
+23/03/2023 11:12:48-Event-Explore articles retrieved from DB-
+23/03/2023 11:12:48-Event-Explore articles retrieved from DB-
+23/03/2023 11:12:49-Event-BaseSQL initialized-
+23/03/2023 11:12:49-Event-Optional Topics retrieved successfully-
+23/03/2023 11:12:49-Event-BaseSQL initialized-
+23/03/2023 11:12:49-Event-Optional Topics retrieved successfully-
+23/03/2023 11:12:50-Event-BaseSQL initialized-
+23/03/2023 11:12:50-Event-BaseSQL initialized-
+23/03/2023 11:12:50-Event-Articles retrieved from DB-
+23/03/2023 11:12:50-Event-Articles retrieved from DB-
+23/03/2023 11:13:01-Event-BaseSQL initialized-
+23/03/2023 11:13:01-Event-BaseSQL initialized-
+23/03/2023 11:13:01-Event-Explore articles retrieved from DB-
+23/03/2023 11:13:01-Event-Explore articles retrieved from DB-
+23/03/2023 11:13:02-Event-BaseSQL initialized-
+23/03/2023 11:13:02-Event-BaseSQL initialized-
+23/03/2023 11:13:02-Event-Articles retrieved from DB-
+23/03/2023 11:13:02-Event-Articles retrieved from DB-
+23/03/2023 11:19:28-Event-BaseSQL initialized-
+23/03/2023 11:19:28-Event-Articles retrieved from DB-
+23/03/2023 11:25:20-Event-BaseSQL initialized-
+23/03/2023 11:25:20-Event-BaseSQL initialized-
+23/03/2023 11:25:20-Event-Articles retrieved from DB-
+23/03/2023 11:25:20-Event-Articles retrieved from DB-
+23/03/2023 11:37:01-Event-BaseSQL initialized-
+23/03/2023 11:37:01-Event-BaseSQL initialized-
+23/03/2023 11:37:01-Event-Articles retrieved from DB-
+23/03/2023 11:37:01-Event-Articles retrieved from DB-
+23/03/2023 11:37:18-Event-BaseSQL initialized-
+23/03/2023 11:37:18-Event-BaseSQL initialized-
+23/03/2023 11:37:18-Event-Articles retrieved from DB-
+23/03/2023 11:37:59-Event-BaseSQL initialized-
+23/03/2023 11:37:59-Event-Topics by sourceID: 3 retrieved successfully-
+23/03/2023 11:38:01-Event-BaseSQL initialized-
+23/03/2023 11:38:01-Event-Articles updated in DB-
+23/03/2023 11:38:01-Event-BaseSQL initialized-
+23/03/2023 11:38:01-Event-Topics by sourceID: 2 retrieved successfully-
+23/03/2023 11:38:01-Event-BaseSQL initialized-
+23/03/2023 11:38:01-Event-Topics by sourceID: 4 retrieved successfully-
+23/03/2023 11:38:02-Event-BaseSQL initialized-
+23/03/2023 11:38:02-Event-Articles updated in DB-
+23/03/2023 11:38:04-Event-BaseSQL initialized-
+23/03/2023 11:38:04-Event-Articles updated in DB-
+23/03/2023 11:38:28-Event-BaseSQL initialized-
+23/03/2023 11:38:28-Event-Topics by sourceID: 1 retrieved successfully-
+23/03/2023 11:38:29-Event-BaseSQL initialized-
+23/03/2023 11:38:29-Event-Articles updated in DB-
+23/03/2023 11:39:38-Event-BaseSQL initialized-
+23/03/2023 11:39:38-Event-Trending articles retrieved from DB-
+23/03/2023 11:39:38-Event-Trending articles retrieved from DB-
+23/03/2023 11:39:39-Event-BaseSQL initialized-
+23/03/2023 11:39:39-Event-BaseSQL initialized-
+23/03/2023 11:39:39-Event-Articles retrieved from DB-

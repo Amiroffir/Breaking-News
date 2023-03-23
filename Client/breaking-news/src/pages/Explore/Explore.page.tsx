@@ -22,7 +22,7 @@ export const ExplorePage = () => {
   }, []);
   return (
     <div className="explore">
-      <ItemsDisplay articlesList={exploreNews} />{" "}
+      <ItemsDisplay articlesList={exploreNews} />
     </div>
   );
 };

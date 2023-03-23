@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useEffect } from "react";
+import { ChangeEvent, useEffect } from "react";
 import { useRecoilState, useRecoilValue } from "recoil";
 import { Topic } from "../../interfaces/Topic.interface";
 import {

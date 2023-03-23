@@ -2,13 +2,17 @@ import { Key, useEffect, useState } from "react";
 import { useRecoilValue } from "recoil";
 import { ItemsDisplay } from "../../components/compsIndex";
 import { Article } from "../../interfaces/Article.interface";
-import { LocalSelectedTopics } from "../../shareStates/selectedTopics.state";
+import {
+  LocalSelectedTopics,
+  SelectedTopicsNames,
+} from "../../shareStates/selectedTopics.state";
 import { getSelectedTopicsItems } from "../../services/topics.service";
 import { Topic } from "../../interfaces/Topic.interface";
 import "./news-feed.scss";
 
 export const NewsFeedPage = () => {
   const selectedTopics: Topic[] = useRecoilValue(LocalSelectedTopics);
+  const selectedTopicsNames: string[] = useRecoilValue(SelectedTopicsNames);
   const [newsItemsByTopics, setNewsItemsByTopics] = useState<Article[][]>([]);
 
   const getSelectedTopics = async (): Promise<Article[][]> => {
@@ -38,7 +42,12 @@ export const NewsFeedPage = () => {
   return (
     <div className="news-feed">
       {newsItemsByTopics.map((newsItemsTopic: Article[], index: Key) => (
-        <ItemsDisplay key={index} articlesList={newsItemsTopic} />
+        <div className="items-by-topic-with-hl">
+          <h3 className="items-display-hl">
+            {selectedTopicsNames[index as number]}
+          </h3>
+          <ItemsDisplay key={index} articlesList={newsItemsTopic} />
+        </div>
       ))}
     </div>
   );

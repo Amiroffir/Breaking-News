@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useRecoilValue } from "recoil";
 import { ItemsDisplay } from "../../components/compsIndex";
 import { Article } from "../../interfaces/Article.interface";

@@ -9,7 +9,6 @@ namespace BreakingNews.Entities
 		private static readonly MainManager _instance = new MainManager();
 		private MainManager()
 		{
-			SQLQuery.RunCommandScalar("SELECT ");
 			Init();
 		}
 		private void Init()

@@ -9,7 +9,7 @@ export const SelectedTopics: RecoilState<Topic[]> = atom<Topic[]>({
 export const SelectedTopicsNames = selector({
   key: "selectedTopicsNames",
   get: ({ get }) => {
-    const selectedTopics = get(SelectedTopics);
+    const selectedTopics = get(LocalSelectedTopics);
     return selectedTopics.map((topic: Topic) => topic.topicName);
   },
 });
@@ -24,36 +24,3 @@ export const LocalSelectedTopics = selector({
     return [];
   },
 });
-
-// export const AddSelectedTopics = selector({
-//   key: "addSelectedTopics",
-//   get: ({ get }) => {
-//     const selectedTopics = get(SelectedTopics);
-//     return selectedTopics;
-//   },
-//   set: ({ set }, newValue) => {
-//     set(SelectedTopics, newValue);
-//   },
-// });
-
-// export const CounterState = atom({
-//   key: "counterState",
-//   default: 0,
-// });
-// export const VatCalcState = selector({
-//   key: "vatCalcState",
-//   get: ({ get }) => {
-//     const vat = get(CounterState) * 1.17;
-//     return vat;
-//   },
-// });
-// export const changeOriginalState = selector({
-//   key: "OriginalState",
-//   get: ({ get }) => {
-//     const vat = get(CounterState);
-//     return vat;
-//   },
-//   set: ({ set }, newValue) => {
-//     set(CounterState, (newValue * 8) / 3);
-//   },
-// });
