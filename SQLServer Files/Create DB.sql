@@ -52,6 +52,3 @@
     --ALTER TABLE Articles ADD Topic INT
     --ALTER TABLE Articles ADD CONSTRAINT "articles_topic_foreign" FOREIGN KEY("Topic") REFERENCES "Topics"("id");
   
-
-  SELECT * FROM Articles
-  SELECT * FROM Topics

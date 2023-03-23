@@ -1,6 +1,4 @@
-﻿select * from topics
-
-
+﻿
 --CREATE TABLE "TopicsIndex"(
 --    "id" INT NOT NULL identity,
 --    "topicName" NVARCHAR(255) NOT NULL,
@@ -28,8 +26,3 @@
     --  update Topics set topicIndex = 12 where topicName = 'Technology'
     --  update Topics set topicIndex = 13 where topicName = 'Weather'
     --  update Topics set topicIndex = 14 where topicName = 'Law'
-
-
-
-    select * from TopicsIndex
-    select * from topics

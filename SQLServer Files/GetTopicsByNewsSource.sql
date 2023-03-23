@@ -10,8 +10,3 @@
 
 --GetTopicsByNewsSource 1
 
---drop procedure GetTopicsByNewsSource
-
-
-
-select * from Topics where newsSource = 1
