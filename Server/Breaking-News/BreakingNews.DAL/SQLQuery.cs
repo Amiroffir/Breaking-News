@@ -36,7 +36,6 @@ namespace BreakingNews.DAL
 
 						}
 					}
-
 				}
 				catch (SqlException e)
 				{

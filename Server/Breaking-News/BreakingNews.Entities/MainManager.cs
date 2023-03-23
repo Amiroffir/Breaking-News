@@ -1,4 +1,5 @@
 ﻿using BreakingMews.Models;
+using BreakingNews.DAL;
 using Utilities;
 
 namespace BreakingNews.Entities
@@ -8,6 +9,7 @@ namespace BreakingNews.Entities
 		private static readonly MainManager _instance = new MainManager();
 		private MainManager()
 		{
+			SQLQuery.RunCommandScalar("SELECT ");
 			Init();
 		}
 		private void Init()
@@ -16,10 +18,10 @@ namespace BreakingNews.Entities
 			LogManager.Init(LogManager.LogType.File);
 			TopicsManager = new TopicsManager(LogManager);
 			ArticlesManager = new ArticlesManager(LogManager);
-			//YnetManager = new YnetManager(LogManager);
-			//WallaManager = new WallaManager(LogManager);
-			//MaarivManager = new MaarivManager(LogManager);
-			//MakoManager = new MakoManager(LogManager);
+			YnetManager = new YnetManager(LogManager);
+			WallaManager = new WallaManager(LogManager);
+			MaarivManager = new MaarivManager(LogManager);
+			MakoManager = new MakoManager(LogManager);
 			TopicsList = new List<Topic>();
 
 			// Init all managers here with the log manager in the constructor
