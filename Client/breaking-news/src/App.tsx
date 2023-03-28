@@ -1,6 +1,6 @@
 import { RecoilRoot } from "recoil";
-import "./App.scss";
 import { BasePage } from "./pages/pagesIndex";
+import "./App.scss";
 
 function App() {
   return (

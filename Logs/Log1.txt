@@ -1,0 +1,20 @@
+24/03/2023 11:14:36-Event-Base entity initialized-
+24/03/2023 11:16:39-Event-Base entity initialized-
+24/03/2023 11:16:39-Event-Topics Manager initialized-
+24/03/2023 11:16:39-Event-Base entity initialized-
+24/03/2023 11:16:39-Event-Articles Manager initialized-
+24/03/2023 11:16:39-Event-Base entity initialized-
+24/03/2023 11:16:39-Event-NewsFeedHandler initialized-
+24/03/2023 11:16:39-Event-Ynet Manager initialized-
+24/03/2023 11:16:39-Event-Base entity initialized-
+24/03/2023 11:16:39-Event-NewsFeedHandler initialized-
+24/03/2023 11:16:39-Event-Walla Manager initialized-
+24/03/2023 11:16:39-Event-Base entity initialized-
+24/03/2023 11:16:39-Event-NewsFeedHandler initialized-
+24/03/2023 11:16:39-Event-Maariv Manager initialized-
+24/03/2023 11:16:39-Event-Base entity initialized-
+24/03/2023 11:16:39-Event-NewsFeedHandler initialized-
+24/03/2023 11:16:39-Event-Mako Manager initialized-
+24/03/2023 11:16:39-Event-BaseSQL initialized-
+24/03/2023 11:16:39-Event-BaseSQL initialized-
+24/03/2023 11:16:39-Event-BaseSQL initialized-

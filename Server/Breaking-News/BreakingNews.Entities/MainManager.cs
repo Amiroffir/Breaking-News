@@ -1,5 +1,4 @@
 ﻿using BreakingMews.Models;
-using BreakingNews.DAL;
 using Utilities;
 
 namespace BreakingNews.Entities
