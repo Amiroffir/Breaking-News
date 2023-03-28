@@ -22,7 +22,7 @@ namespace BreakingNews.Entities
 			MakoManager = new MakoManager(LogManager);
 			TopicsList = new List<Topic>();
 
-			// Init all managers here with the log manager in the constructor
+			// Init all managers here with the log manager in the ctor
 		}
 
 		public static MainManager Instance
